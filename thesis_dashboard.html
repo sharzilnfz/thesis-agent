@@ -14,7 +14,9 @@ nav a{color:#e5e7eb;text-decoration:none;font-size:14px;font-weight:600;padding:
 div.card:hover,label.card:hover{transform:translateY(-1px);box-shadow:0 2px 4px rgba(16,24,40,.08),0 10px 24px rgba(16,24,40,.1);border-color:#c7d2fe}
 .card.hl{border:2px solid var(--bad);background:#fff7f7;box-shadow:0 0 0 3px rgba(220,38,38,.15)}
 .claim{font-size:1.02rem;font-weight:650;line-height:1.45}
-.strike{text-decoration:line-through;color:#888}
+.myth{border-left:4px solid #c00;background:#fff5f5;padding:8px 10px;border-radius:0 8px 8px 0;font-weight:600}
+.fix{border-left:4px solid #0a0;background:#f5fff5;padding:8px 10px;border-radius:0 8px 8px 0;margin-top:8px}
+.gapbadge{display:inline-block;font-size:12px;font-weight:700;background:#333;color:#fff;padding:2px 8px;border-radius:10px;margin-bottom:6px}
 .badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:2px 10px;border-radius:999px;margin:2px;text-transform:uppercase}
 .real{background:var(--ok-bg);color:#166534;border:1px solid #86efac}.sim{background:var(--bad-bg);color:#991b1b;border:1px solid #fca5a5}.est{background:var(--warn-bg);color:#854d0e;border:1px solid #fde047}
 table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--sh)}
@@ -31,7 +33,7 @@ a{color:var(--accent)}a:hover{color:var(--accent-d)}
 #benchBox ul{display:grid;gap:6px;padding-left:20px}ol li{margin-bottom:6px}
 </style></head><body>
 <nav><a href="#start">Start Here</a><a href="#papers">Papers</a><a href="#facts">Key Facts</a>
-<a href="#gaps">Mistakes To Avoid</a><a href="#data">Datasets &amp; Hardware</a><a href="#plan">Reading Plan</a></nav>
+<a href="#gaps">Gaps To Avoid</a><a href="#data">Datasets &amp; Hardware</a><a href="#plan">Reading Plan</a></nav>
 <div class="counts">COUNTS — papers: 103 papers &middot; summaries: 93 &middot; facts: 23 &middot; gaps: 18</div>
 <h1 id="start">WiFi Sensing Thesis Dashboard</h1>
 <h2>Start Here — the thesis question in 3 sentences</h2>
@@ -43,7 +45,7 @@ and testing methods make WiFi sensing honestly reliable across unseen people, ro
 <ol><li>Read one survey anchor below to learn the pipeline (pipeline means the steps from signal to result).</li>
 <li>Skim the Papers table; open 2–3 abstracts in your topic area.</li>
 <li>Read the 23 Key Facts cards — these are the only claims safe to cite.</li>
-<li>Read Mistakes To Avoid so you do not repeat debunked claims.</li>
+<li>Read the gaps so you do not repeat debunked claims.</li>
 <li>Check Datasets &amp; Hardware before any experiment; note what is simulated.</li></ol>
 <div class="gloss"><h3>Glossary (each in 10 words or fewer)</h3><dl>
 <dt>CSI</dt><dd>Channel State Information: WiFi signal measurements per antenna.</dd>
@@ -60,8 +62,9 @@ and testing methods make WiFi sensing honestly reliable across unseen people, ro
 <h2 id="facts">Key Facts (23 citable claims)</h2>
 <input type="text" id="qFacts" placeholder="Search facts by claim, source, or quote...">
 <div id="factCards"></div>
-<h2 id="gaps">Mistakes To Avoid (18)</h2>
-<input type="text" id="qGaps" placeholder="Search mistakes by keyword...">
+<h2 id="gaps">Gaps — Audited Mistakes To Avoid (18)</h2>
+<p>Each gap is one audit finding. It names a risky claim, the verdict on it, what to use instead, and how to validate it.</p>
+<input type="text" id="qGaps" placeholder="Search gaps by keyword...">
 <div id="gapCards"></div>
 <h2 id="data">Datasets &amp; Hardware</h2>
 <div class="warn"><b>WARNING — estimates, not measurements:</b> simulated data splits
@@ -107,7 +110,7 @@ d.onclick=function(){highlight(c.bib)};box.appendChild(d);});}
 function renderGaps(f){var box=document.getElementById("gapCards");box.innerHTML="";
 GAPS.filter(function(g){return !f||(g.naive+" "+g.fix+" "+g.check+" "+g.verdict).toLowerCase().indexOf(f)>=0})
 .forEach(function(g){var d=document.createElement("div");d.className="card";d.setAttribute("data-bibs",g.bibs.join(","));
-d.innerHTML="<div class='strike'>"+esc(g.naive)+"</div><p><b>Verdict:</b> "+esc(g.verdict)+"</p><p><b>Fix:</b> "+esc(g.fix)+"</p><p><b>What to check:</b> "+esc(g.check)+"</p>";
+d.innerHTML="<div class='gapbadge'>"+esc(g.id)+"</div><div class='myth'>Risky claim (do not use): "+esc(g.naive)+"</div><p><b>Audit verdict:</b> "+esc(g.verdict)+"</p><div class='fix'>Use instead: "+esc(g.fix)+"</div><p><b>How to validate:</b> "+esc(g.check)+"</p>";
 d.onclick=function(){if(g.bibs[0])highlight(g.bibs[0])};box.appendChild(d);});}
 // bench/hw
 (function(){var b=document.getElementById("benchBox"),s="";

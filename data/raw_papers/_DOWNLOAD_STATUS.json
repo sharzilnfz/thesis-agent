@@ -1,0 +1,391 @@
+{
+ "downloaded": [
+  {
+   "serial": 1,
+   "file": "01_Ma_et_al_2019_CSI_Survey_ACM_CSUR.pdf",
+   "actual_title": "WiFi Sensing with Channel State Information: A Survey",
+   "sheet_label": "Ma et al. 2019 CSI Survey, ACM CSUR",
+   "kb": 1089
+  },
+  {
+   "serial": 5,
+   "file": "05_Wang_et_al_2025_Generalizability_Survey_COMST_arXiv_2503_080.pdf",
+   "actual_title": "",
+   "sheet_label": "Wang et al. 2025 Generalizability Survey, COMST arXiv:2503.08008",
+   "kb": 10040
+  },
+  {
+   "serial": 6,
+   "file": "06_SSL_for_WiFi_Sensing_Tutorial_IEEE_COMST_2025.pdf",
+   "actual_title": "A Tutorial-cum-Survey on Self-Supervised Learning (WiFi sensing)",
+   "sheet_label": "SSL for WiFi Sensing Tutorial, IEEE COMST 2025",
+   "kb": 4436
+  },
+  {
+   "serial": 11,
+   "file": "11_ESPARGOS_Phase_Coherent_CSI_2024_arXiv_2408_16377.pdf",
+   "actual_title": "ESPARGOS: Phase-Coherent WiFi CSI Datasets for Wireless Sensing Research",
+   "sheet_label": "ESPARGOS Phase-Coherent CSI 2024 arXiv:2408.16377",
+   "kb": 4303
+  },
+  {
+   "serial": 13,
+   "file": "13_Wang_et_al_E_eyes_MobiCom_2014.pdf",
+   "actual_title": "E-eyes: Device-free Location-oriented Activity Identification Using Fine-grained WiFi Signatures",
+   "sheet_label": "Wang et al. E-eyes MobiCom 2014",
+   "kb": 1815
+  },
+  {
+   "serial": 25,
+   "file": "25_Zeng_et_al_FarSense_MobiCom_2019.pdf",
+   "actual_title": "FarSense: Pushing the Range Limit of WiFi-based Respiration Sensing",
+   "sheet_label": "Zeng et al. FarSense, MobiCom 2019",
+   "kb": 4392
+  },
+  {
+   "serial": 30,
+   "file": "30_WiROS_Toolbox_2023_arXiv_2305_13418.pdf",
+   "actual_title": "WiROS: WiFi sensing toolbox for robotics",
+   "sheet_label": "WiROS Toolbox 2023 arXiv:2305.13418",
+   "kb": 2812
+  },
+  {
+   "serial": 33,
+   "file": "33_Yang_et_al_SenseFi_Patterns_2022_arXiv_2207_07859.pdf",
+   "actual_title": "SenseFi: A Library and Benchmark on Deep-Learning-Empowered WiFi Human Sensing",
+   "sheet_label": "Yang et al. SenseFi Patterns 2022 arXiv:2207.07859",
+   "kb": 998
+  },
+  {
+   "serial": 34,
+   "file": "34_Yang_et_al_AutoFi_IoT_J_2022.pdf",
+   "actual_title": "AutoFi: Towards Automatic WiFi Human Sensing via Geometric Self-Supervision",
+   "sheet_label": "Yang et al. AutoFi IoT-J 2022",
+   "kb": 2897
+  },
+  {
+   "serial": 35,
+   "file": "35_Yang_et_al_EfficientFi_IoT_J_2022_arXiv_2204_04138.pdf",
+   "actual_title": "EfficientFi: Towards Large-Scale Lightweight WiFi Sensing via CSI Compression",
+   "sheet_label": "Yang et al. EfficientFi IoT-J 2022 arXiv:2204.04138",
+   "kb": 1274
+  },
+  {
+   "serial": 36,
+   "file": "36_WiFlexFormer_2024_arXiv_2411_04224.pdf",
+   "actual_title": "WiFlexFormer: Efficient WiFi-Based Person-Centric Sensing",
+   "sheet_label": "WiFlexFormer 2024 arXiv:2411.04224",
+   "kb": 643
+  },
+  {
+   "serial": 37,
+   "file": "37_MORIC_Delay_Doppler_2025_arXiv_2506_12997.pdf",
+   "actual_title": "MORIC: CSI Delay-Doppler Decomposition for Robust Wi-Fi-based HAR",
+   "sheet_label": "MORIC Delay-Doppler 2025 arXiv:2506.12997",
+   "kb": 11075
+  },
+  {
+   "serial": 38,
+   "file": "38_Physics_Guided_Lightweight_TCN_2026_arXiv_2606_01834.pdf",
+   "actual_title": "Physics-Guided Attention in a Lightweight TCN for WiFi sensing",
+   "sheet_label": "Physics-Guided Lightweight TCN 2026 arXiv:2606.01834",
+   "kb": 1005
+  },
+  {
+   "serial": 41,
+   "file": "41_Data_Augmentation_Cross_Domain_2024_arXiv_2401_00964.pdf",
+   "actual_title": "Data Augmentation Techniques for Cross-Domain WiFi CSI-based HAR",
+   "sheet_label": "Data Augmentation Cross-Domain 2024 arXiv:2401.00964",
+   "kb": 2346
+  },
+  {
+   "serial": 42,
+   "file": "42_Transformer_Hetero_Env_2022_arXiv_2209_11750.pdf",
+   "actual_title": "Transformer-based Models for Heterogeneous Environments in HAR",
+   "sheet_label": "Transformer Hetero Env 2022 arXiv:2209.11750",
+   "kb": 6861
+  },
+  {
+   "serial": 44,
+   "file": "44_WiMANS_ECCV_2024_arXiv_2402_09430.pdf",
+   "actual_title": "WiMANS: A Benchmark Dataset for WiFi-based Multi-user Activity Sensing",
+   "sheet_label": "WiMANS ECCV 2024 arXiv:2402.09430",
+   "kb": 12642
+  },
+  {
+   "serial": 47,
+   "file": "47_CSI_Bench_NeurIPS_2025_arXiv_2505_21866.pdf",
+   "actual_title": "CSI-Bench: A Large-Scale In-the-Wild Dataset for Multi-task WiFi Sensing",
+   "sheet_label": "CSI-Bench NeurIPS 2025 arXiv:2505.21866",
+   "kb": 2170
+  },
+  {
+   "serial": 49,
+   "file": "49_Du_802_11bf_Overview_COMST_2024_802_11bf_2025.pdf",
+   "actual_title": "An Overview on IEEE 802.11bf: WLAN Sensing",
+   "sheet_label": "Du 802.11bf Overview COMST 2024 + 802.11bf-2025",
+   "kb": 4095
+  },
+  {
+   "serial": 50,
+   "file": "50_Path_Diversity_ISAC_2026_MilaGro_NIST_2026.pdf",
+   "actual_title": "Path to Diversity: A Primer on ISAC-izing Commodity Wi-Fi",
+   "sheet_label": "Path Diversity ISAC 2026 + MilaGro + NIST 2026",
+   "kb": 3639
+  },
+  {
+   "serial": 51,
+   "file": "51_DoRF_2026_arXiv_2608_08381_preprint.pdf",
+   "actual_title": "DoRF++: Spherical Representation Learning over Doppler Radiance Fields",
+   "sheet_label": "DoRF++, 2026, arXiv:2608.08381 (preprint)",
+   "kb": 1505
+  },
+  {
+   "serial": 52,
+   "file": "52_Age_aware_sensing_2026_arXiv_2606_31690_preprint.pdf",
+   "actual_title": "Resource-Efficient WiFi CSI Sensing via Exploiting the Age of Samples",
+   "sheet_label": "Age-aware sensing, 2026, arXiv:2606.31690 (preprint)",
+   "kb": 459
+  },
+  {
+   "serial": 54,
+   "file": "54_FPNet_2026_arXiv_2602_12799_preprint.pdf",
+   "actual_title": "FPNet: Joint Wi-Fi Beamforming Matrix Feedback and Indoor Positioning",
+   "sheet_label": "FPNet, 2026, arXiv:2602.12799 (preprint)",
+   "kb": 3603
+  },
+  {
+   "serial": 55,
+   "file": "55_WiRSSI_2026_npj_Wireless_Technology.pdf",
+   "actual_title": "Rethinking RSSI for WiFi Sensing (introduces the WiRSSI framework)",
+   "sheet_label": "WiRSSI, 2026, npj Wireless Technology",
+   "kb": 18683
+  }
+ ],
+ "missing": [
+  {
+   "serial": 2,
+   "sheet_label": "Liu et al. 2019 Wireless Sensing Survey, IEEE COMST",
+   "expected_title": "Wireless Sensing for Human Activity: A Survey",
+   "authors_year_venue": "Liu et al., 2019, IEEE COMST",
+   "link": "https://scholar.google.com/scholar?q=Wireless+Sensing+for+Human+Activity%3A+A+Survey+Liu+2019+IEEE+Communications+Surveys"
+  },
+  {
+   "serial": 3,
+   "sheet_label": "Chen et al. 2023 Cross-Domain Survey, ACM CSUR",
+   "expected_title": "Cross-Domain WiFi Sensing with Channel State Information: A Survey",
+   "authors_year_venue": "Chen et al., 2023, ACM Computing Surveys",
+   "link": "https://scholar.google.com/scholar?q=Cross-Domain+WiFi+Sensing+with+Channel+State+Information%3A+A+Survey+Chen+2023"
+  },
+  {
+   "serial": 4,
+   "sheet_label": "Miao et al. 2025 HAR Survey, ACM CSUR",
+   "expected_title": "Human Activity Recognition Based on WiFi: A Survey",
+   "authors_year_venue": "Miao et al., 2025, ACM Computing Surveys",
+   "link": "https://dl.acm.org/doi/10.1145/3705893"
+  },
+  {
+   "serial": 7,
+   "sheet_label": "Sai et al. 2026 ML Review, IEEE IoT-J",
+   "expected_title": "Machine Learning Techniques for Wi-Fi CSI-based Recognition and Sensing: A Review",
+   "authors_year_venue": "Sai et al., 2026, IEEE IoT-J",
+   "link": "https://scholar.google.com/scholar?q=Machine+Learning+Techniques+for+Wi-Fi+CSI-based+Recognition+and+Sensing+Sai+2026+IEEE+IoT"
+  },
+  {
+   "serial": 8,
+   "sheet_label": "Halperin et al. 2011 CSI Tool",
+   "expected_title": "Toolkit for Decoding 802.11a/c/e/packet headers in Linux",
+   "authors_year_venue": "Halperin et al., 2011, ACM CCR (tool)",
+   "link": "https://github.com/dhalperi/linux-80211n-csitool"
+  },
+  {
+   "serial": 9,
+   "sheet_label": "Nexmon CSI 2017-2019 (Gringoli/Schulz)",
+   "expected_title": "Nexmon: Exploiting the Nexmon firmware for monitoring and decoding nexmon-compatible WiFi CSI",
+   "authors_year_venue": "Nexmon team, 2017-2019, open firmware",
+   "link": "https://github.com/seemoo-lab/nexmon_csi"
+  },
+  {
+   "serial": 10,
+   "sheet_label": "PicoScenes 2020-2022",
+   "expected_title": "PicoScenes: A Multi-Device Dataset for Low-Latency Multi-Modal Human Activity Sensing",
+   "authors_year_venue": "PicoScenes team, 2020-2022, open platform",
+   "link": "https://github.com/wifisensing/PicoScenes"
+  },
+  {
+   "serial": 12,
+   "sheet_label": "Adib & Katabi See Through Walls SIGCOMM 2013",
+   "expected_title": "See Through Walls with WiFi",
+   "authors_year_venue": "Adib & Katabi, 2013, ACM SIGCOMM",
+   "link": "https://scholar.google.com/scholar?q=See+Through+Walls+with+WiFi+Adib+Katabi+SIGCOMM+2013"
+  },
+  {
+   "serial": 14,
+   "sheet_label": "Wang et al. CARM, UbiComp 2015",
+   "expected_title": "Device-free CSI-based human activity recognition and monitoring",
+   "authors_year_venue": "Wang et al. (CARM), 2015, ACM UbiComp",
+   "link": "https://scholar.google.com/scholar?q=CARM+CSI-based+human+Activity+Recognition+and+Monitoring+UbiComp+2015"
+  },
+  {
+   "serial": 15,
+   "sheet_label": "Kotaru et al. SpotFi SIGCOMM 2015",
+   "expected_title": "SpotFi: High Accuracy Indoor Localization with WiFi",
+   "authors_year_venue": "Kotaru et al., 2015, ACM SIGCOMM",
+   "link": "https://dl.acm.org/doi/10.1145/2785956.2787487"
+  },
+  {
+   "serial": 16,
+   "sheet_label": "Xiong & Jamieson ArrayTrack NSDI 2013",
+   "expected_title": "ArrayTrack: Array-based indoor tracking with commodity WiFi",
+   "authors_year_venue": "Xiong & Jamieson, 2013, USENIX NSDI",
+   "link": "https://scholar.google.com/scholar?q=ArrayTrack+fine-grained+indoor+location+Xiong+Jamieson+NSDI+2013"
+  },
+  {
+   "serial": 17,
+   "sheet_label": "Gjengset et al. Phaser, CoNEXT 2014",
+   "expected_title": "Phaser: Enabling phased array signal processing on commodity WiFi devices",
+   "authors_year_venue": "Gjengset et al., 2014, ACM CoNEXT",
+   "link": "https://scholar.google.com/scholar?q=Phaser+enabling+phased+array+signal+processing+commodity+wifi+Gjengset+CoNEXT+2014"
+  },
+  {
+   "serial": 18,
+   "sheet_label": "Wang et al. RT-Fall, IEEE TMC 2017 (early access 2016)",
+   "expected_title": "RT-Fall: Real-time, contactless fall detection with commodity WiFi devices",
+   "authors_year_venue": "Wang et al. (RT-Fall), 2017, IEEE TMC",
+   "link": "https://scholar.google.com/scholar?q=RT-Fall+real-time+contactless+fall+detection+commodity+WiFi+TMC+2017"
+  },
+  {
+   "serial": 19,
+   "sheet_label": "Wang et al. PhaseFi, GLOBECOM 2015 / TMC 2016",
+   "expected_title": "PhaseFi: Phase fingerprinting for indoor localization with commodity WiFi",
+   "authors_year_venue": "Wang et al. (PhaseFi), 2015-16, GLOBECOM/TMC",
+   "link": "https://scholar.google.com/scholar?q=PhaseFi+phase+fingerprinting+indoor+localization+deep+learning+GLOBECOM+2015"
+  },
+  {
+   "serial": 20,
+   "sheet_label": "Vasisht et al. Chronos NSDI 2016",
+   "expected_title": "Chronos: ToF-based indoor localization using commodity WiFi",
+   "authors_year_venue": "Vasisht et al., 2016, USENIX NSDI",
+   "link": "https://scholar.google.com/scholar?q=Chronos+single-antenna+ToF+localization+Vasisht+NSDI+2016"
+  },
+  {
+   "serial": 21,
+   "sheet_label": "Qian et al. Widar MobiCom 2017",
+   "expected_title": "Widar: Decimeter-level indoor localization with commodity WiFi",
+   "authors_year_venue": "Qian et al. (Widar), 2017, ACM MobiCom",
+   "link": "https://scholar.google.com/scholar?q=Widar+decimeter+tracking+Qian+MobiCom+2017"
+  },
+  {
+   "serial": 22,
+   "sheet_label": "Qian et al. Widar2.0 MobiSys 2018",
+   "expected_title": "Widar2.0: Robust WiFi-based indoor localization in the presence of multiple people",
+   "authors_year_venue": "Qian et al. (Widar2.0), 2018, ACM MobiCom",
+   "link": "https://scholar.google.com/scholar?q=Widar2.0+multi-person+tracking+Qian+MobiCom+2018"
+  },
+  {
+   "serial": 23,
+   "sheet_label": "Zheng et al. Widar3.0, SIGCOMM 2019",
+   "expected_title": "Zero-Effort Cross-Domain Gesture Recognition with Wi-Fi",
+   "authors_year_venue": "Zheng et al. (Widar3.0), 2019, ACM MobiSys",
+   "link": "https://scholar.google.com/scholar?q=Widar3.0+zero-effort+cross-domain+gesture+recognition+Zheng+SIGCOMM+2019"
+  },
+  {
+   "serial": 24,
+   "sheet_label": "Ma et al. SignFi, SenSys 2018",
+   "expected_title": "SignFi: Sign Language Recognition with WiFi",
+   "authors_year_venue": "Ma et al. (SignFi), 2018, ACM SenSys",
+   "link": "https://scholar.google.com/scholar?q=SignFi+sign+language+CSI+CNN+Ma+SenSys+2018"
+  },
+  {
+   "serial": 26,
+   "sheet_label": "Wang et al. PhaseBeat, BHI 2016",
+   "expected_title": "PhaseBeat: Exploiting WiFi CSI for heartbeat sensing",
+   "authors_year_venue": "Wang et al. (PhaseBeat), 2016, IEEE BHI",
+   "link": "https://scholar.google.com/scholar?q=PhaseBeat+breathing+heartbeat+Wang+BHI+2016"
+  },
+  {
+   "serial": 27,
+   "sheet_label": "Wang et al. TensorBeat, IPSN 2017",
+   "expected_title": "TensorBeat: Tensor-only real-time heartbeat monitoring with commodity WiFi",
+   "authors_year_venue": "Wang et al. (TensorBeat), 2017, ACM IPSN",
+   "link": "https://scholar.google.com/scholar?q=TensorBeat+multi-person+breathing+Wang+IPSN+2017"
+  },
+  {
+   "serial": 28,
+   "sheet_label": "Kotaru et al. WiCapture, NSDI 2017",
+   "expected_title": "WiCapture: On-chip low-cost high-throughput commodity Wi-Fi based VR system",
+   "authors_year_venue": "Kotaru et al. (WiCapture), 2017, USENIX NSDI",
+   "link": "https://scholar.google.com/scholar?q=WiCapture+VR+tracking+commodity+WiFi+Kotaru+NSDI+2017"
+  },
+  {
+   "serial": 29,
+   "sheet_label": "Abdelnasser et al. Wision, HotNets 2013",
+   "expected_title": "Wi-Fi-based vision: A new paradigm for vision-based sensing",
+   "authors_year_venue": "Abdelnasser et al. (Wision), 2013, ACM HotNets",
+   "link": "https://scholar.google.com/scholar?q=Wision+imaging+Abdelnasser+HotNets+2013"
+  },
+  {
+   "serial": 31,
+   "sheet_label": "Yousefi et al. 2017 Behavior Recognition IEEE Comm Mag",
+   "expected_title": "A Survey on Behavior Recognition Using WiFi Channel State Information",
+   "authors_year_venue": "Yousefi et al., 2017, IEEE Comm. Magazine",
+   "link": "https://scholar.google.com/scholar?q=Behavior+Recognition+Using+WiFi+CSI+Yousefi+IEEE+Communications+Magazine+2017"
+  },
+  {
+   "serial": 32,
+   "sheet_label": "Chen et al. 2018 Attention BLSTM TMC",
+   "expected_title": "WiFi-CSI: Passive Human Activity Recognition with Attention-Based Deep Learning",
+   "authors_year_venue": "Chen et al., 2018, IEEE TMC",
+   "link": "https://scholar.google.com/scholar?q=WiFi+CSI+passive+HAR+attention+BLSTM+Chen+TMC+2018"
+  },
+  {
+   "serial": 39,
+   "sheet_label": "Jiang et al. EI Adversarial MobiCom 2018",
+   "expected_title": "Environment-independent activity recognition using WiFi CSI",
+   "authors_year_venue": "Jiang et al. (EI), 2018, ACM MobiCom",
+   "link": "https://scholar.google.com/scholar?q=EI+adversarial+environment-independent+activity+recognition+Jiang+MobiCom+2018"
+  },
+  {
+   "serial": 40,
+   "sheet_label": "Zhang et al. CrossSense UbiComp 2019",
+   "expected_title": "CrossSense: Beyond Cross-Domain Wi-Fi Sensing with Path Similarity",
+   "authors_year_venue": "Zhang et al. (CrossSense), 2019, ACM UbiComp",
+   "link": "https://scholar.google.com/scholar?q=CrossSense+roaming+models+Zhang+UbiComp+2019"
+  },
+  {
+   "serial": 43,
+   "sheet_label": "Widar3.0 Public Dataset 2021",
+   "expected_title": "Widar3.0 Public Dataset",
+   "authors_year_venue": "Widar3.0 dataset, 2021, Tsinghua release",
+   "link": "https://tns.thss.tsinghua.edu.cn/widar3.0/"
+  },
+  {
+   "serial": 45,
+   "sheet_label": "XRF55 RF Action Corpus 2024",
+   "expected_title": "XRF55",
+   "authors_year_venue": "XRF55, 2024, multi-RF corpus",
+   "link": "https://scholar.google.com/scholar?q=XRF55+RF+action+corpus+2024"
+  },
+  {
+   "serial": 46,
+   "sheet_label": "MM-Fi Multimodal 2023",
+   "expected_title": "MM-Fi: Multi-Modal Non-Intrusive Wi-Fi Sensing with Commodity Wi-Fi",
+   "authors_year_venue": "MM-Fi, 2023, multimodal benchmark",
+   "link": "https://scholar.google.com/scholar?q=MM-Fi+multimodal+WiFi+LiDAR+RGB+2023"
+  },
+  {
+   "serial": 48,
+   "sheet_label": "Sensors 2026 Baseline + ESP-Fi HAR 2026",
+   "expected_title": "ESP-Fi",
+   "authors_year_venue": "ESP-Fi HAR + Sensors baseline, 2026",
+   "link": "https://scholar.google.com/scholar?q=ESP-Fi+HAR+low-power+WiFi+CSI+Ad+Hoc+Networks+2026"
+  },
+  {
+   "serial": 53,
+   "sheet_label": "Traffic-robust, 2026, arXiv:2605.08308 (preprint)",
+   "expected_title": "Traffic-robust",
+   "authors_year_venue": "Traffic-robust, 2026, arXiv:2605.08308 (preprint)",
+   "link": "https://arxiv.org/abs/2605.08308"
+  }
+ ]
+}

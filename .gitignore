@@ -1,0 +1,9 @@
+# Paywalled publisher PDFs live here — shared privately, never pushed.
+# (Manifests CATALOG.md / _FINAL_STATUS.json ARE tracked.)
+data/raw_papers/*.pdf
+
+# Secrets / local state
+.env
+__pycache__/
+*.pyc
+.DS_Store

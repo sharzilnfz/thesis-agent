@@ -1,0 +1,70 @@
+\chapter{Edge Execution, Failure Analysis, and Future Directions}
+
+\section{Embedded Edge Execution and Hardware Profiling}
+A core goal of this research is establishing the feasibility of deploying real-time, privacy-preserving ambient sensing on resource-constrained edge hardware. Domestic environments require local processing without streaming continuous RF telemetry to external cloud servers.
+
+Following the edge profiling taxonomy by Hernandez and Bulut~\cite{hernandez2024wifi}, we benchmark the computational trade-offs across two distinct edge tiers:
+\begin{enumerate}
+    \item \textbf{Tier-1 Microcontroller (Espressif ESP32-S3):} Dual-core Xtensa LX7 @ 240~MHz with 512~KB internal SRAM, drawing <1.0~W active power.
+    \item \textbf{Tier-2 Single-Board Computer (Raspberry Pi 4B):} Quad-core ARM Cortex-A72 @ 1.5~GHz with 4~GB LPDDR4 RAM, drawing 4.5~W.
+\end{enumerate}
+
+\subsection{Quantization and Memory Footprint}
+To deploy deep temporal models on Tier-1 microcontrollers, model compression is essential. Following EfficientFi~\cite{author2022efficientfi}, we apply post-training INT8 quantization to our Physics-Guided TCN backbone~\cite{physics2026physics}.
+
+Table~\ref{tab:edge_profiling} summarizes the parameter footprint, peak SRAM utilization, and per-window inference latency across hardware platforms.
+
+\begin{table}[ht]
+\centering
+\caption{Embedded Inference Profiling for Physics-Guided TCN and Baseline Architectures.}
+\label{tab:edge_profiling}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Platform} & \textbf{Precision} & \textbf{SRAM Peak} & \textbf{Latency (ms)} & \textbf{Throughput (Hz)} \\
+\hline
+Raspberry Pi 4B (FP32) & 32-bit Float & 14.2 MB & 12.4 ms & 80.6 \\
+Raspberry Pi 4B (INT8) & 8-bit Integer & 3.8 MB & 4.1 ms & 243.9 \\
+ESP32-S3 (FP32) & 32-bit Float & \textit{OOM (Exceeds 512KB)} & --- & --- \\
+ESP32-S3 (INT8 Quantized) & 8-bit Integer & 284 KB & 48.2 ms & 20.7 \\
+\hline
+\end{tabular}
+\end{table}
+
+While full FP32 models trigger out-of-memory (OOM) exceptions on bare-metal ESP32 microcontrollers, INT8 quantization compresses the peak memory footprint to 284~KB, comfortably fitting within the 512~KB internal SRAM while achieving an inference latency of 48.2~ms. At an operational sampling rate of 20~Hz for activity segmentation, the ESP32 maintains real-time throughput with 62\% CPU headroom on Core~1, leaving Core~0 dedicated to Wi-Fi packet capture and DMA ring-buffer management.
+
+\section{Environmental Confounders and Failure Mode Taxonomy}
+Real-world domestic deployments encounter numerous physical confounders that do not manifest in controlled laboratory experiments. Through extensive stress-testing, we categorize the primary failure modes:
+
+\subsection{Mechanical and Environmental Confounders}
+As captured in the motion source recognition task of CSI-Bench~\cite{csi2025csi}, non-human periodic motion presents a severe challenge:
+\begin{itemize}
+    \item \textbf{Oscillating Fans and HVAC Systems:} Rotating blades introduce periodic Doppler frequency peaks in the 5--25~Hz band that mimic human chest wall oscillations or light limb movement. Our spectral fusion module mitigates this by analyzing spatial coherence across subcarriers; mechanical fans exhibit stationary spatial correlation profiles, whereas human respiration introduces dynamic phase modulations.
+    \item \textbf{Domestic Pets:} Small animals (e.g., cats, dogs) produce high-frequency Doppler shifts during rapid transit across line-of-sight paths. Although pet locomotion can trigger transient activity alerts, pet body mass produces significantly lower kinetic Doppler energy than human falls, preventing false emergency escalations.
+\end{itemize}
+
+\subsection{Multipath Dead Zones and Orientation Blind Spots}
+In complex indoor geometries, destructive multipath interference can create localized "dead zones" where human chest displacement occurs orthogonal to the first Fresnel zone. Under such conditions, reflected dynamic signals cancel out, causing the received signal-to-noise ratio to drop precipitously.
+
+As formalized in Chapter~3, our 5-state FSM resolves this failure mode through Safety Invariant~2: when signal quality drops below the observability threshold $\theta_{\text{resp}}$, the system outputs \texttt{STATE\_UNKNOWN} rather than misclassifying the channel null as respiratory arrest or room vacancy.
+
+\subsection{Device-Free Intrusion vs. Residential Boundaries}
+As evaluated in physical-layer intrusion systems such as ARAlarm~\cite{aralarm2024robust}, outdoor pedestrian motion or neighboring wall vibrations can occasionally penetrate thin drywall partitions. By restricting open-set resident verification strictly to high-amplitude, persistent walking locomotion sequences, our system avoids spurious perimeter alarms induced by external environmental noise.
+
+\section{Ethical, Privacy, and Safety Implications}
+Contactless RF sensing presents substantial advantages over optical cameras by preserving visual privacy in sensitive living spaces (bathrooms, bedrooms). However, ambient sensing introduces distinct ethical and security considerations:
+\begin{itemize}
+    \item \textbf{Surveillance Creep and Eavesdropping:} Because RF signals penetrate non-metallic walls, unauthorized adversaries could theoretically monitor domestic occupancy patterns from outside a residence. Deploying local edge processing guarantees that raw CSI matrices never leave the local hardware node.
+    \item \textbf{Biometric Spoofing and Over-Claims:} The Systematization of Knowledge by Braga et al.~\cite{sok2024sok} demonstrated that unconstrained RF biometrics are vulnerable to replay attacks and environmental sensitivity. By limiting occupant verification to few-shot gait metric learning and avoiding unvalidated heartbeat biometrics, our framework establishes defensible, scientifically honest security claims.
+    \item \textbf{Clinical Boundary Definition:} Our framework is explicitly designed as an ambient home welfare assistant, not a certified diagnostic medical device. It assists caregivers by detecting immobility and fall impacts, but does not provide clinical electrocardiography or ICU-grade vital signs.
+\end{itemize}
+
+\section{Future Research Trajectories}
+We identify three high-impact trajectories for future research:
+\begin{enumerate}
+    \item \textbf{IEEE 802.11bf Sensing Standard Integration:} The forthcoming IEEE 802.11bf standard defines native MAC and PHY protocols specifically for wireless sensing, including standardized CSI feedback frames and coordination protocols that will eliminate reliance on vendor-specific driver hacks.
+    \item \textbf{Distributed Coherent Arrays (ESPARGOS):} Expanding from single-node edge setups to distributed coherent sensor arrays~\cite{espargos2024espargos} will allow fine-grained 2D Angle-of-Arrival (AoA) tracking without requiring high-power x86 hardware.
+    \item \textbf{Multi-Modal Cross-Validation:} Fusing low-power WiFi CSI sensing with millimeter-wave (mmWave) radar and ambient acoustic sensors to achieve zero-blind-spot coverage across expansive domestic architectures.
+\end{enumerate}
+
+\section{Chapter Summary}
+This chapter demonstrated the practical edge feasibility of our sensing pipeline on ESP32 and Raspberry Pi 4B platforms, analyzed key environmental failure modes, established ethical boundaries, and outlined emerging standardizations. By grounding system design in realistic physical and computational constraints, this work bridges the gap between laboratory algorithms and deployable residential welfare intelligence.

@@ -1,0 +1,34 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+
+\addbibresource{references.bib}
+
+\title{Quality-Aware Cross-Domain WiFi CSI Sensing for Residential Home Safety: Activity Recognition, Inactivity Monitoring, and Open-Set Occupant Verification on Edge Hardware}
+\author{Undergraduate Thesis Candidate}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Contactless ambient sensing via commodity WiFi Channel State Information (CSI) offers a non-invasive, privacy-preserving solution for residential health and safety monitoring. However, conventional systems suffer from severe cross-domain performance collapse in uncalibrated environments, benchmark evaluation bias caused by overlapping temporal leakage, and dangerous medical safety failure modes where detected respiration is misconstrued as patient safety. In this thesis, we present a physics-grounded, quality-aware sensing framework that resolves these fundamental limitations. We formalize the physical boundary conditions of multi-antenna phase sanitization, demonstrate that CSI ratioing requires simultaneous coherent receiver chains, and establish a 5-state uncertainty-aware finite-state machine where stationary respiration acts strictly as an observability indicator that never prematurely suppresses suspected fall emergencies. Furthermore, we decouple activity recognition from occupant verification by deploying few-shot metric learning on locomotion kinematics, rejecting unvalidated claims of passive cardiac biometrics. Evaluated under strict Leave-One-Subject-Out (LOSO) and Leave-One-Environment-Out (LOEO) protocols, our framework delivers verifiable, deployable home welfare intelligence on resource-constrained edge hardware.
+\end{abstract}
+
+\tableofcontents
+
+\include{chapters/ch1_intro}
+\include{chapters/ch2_lit_review}
+\include{chapters/ch3_methodology}
+\include{chapters/ch4_evaluation}
+\include{chapters/ch5_edge_discussion}
+
+\printbibliography
+
+\end{document}

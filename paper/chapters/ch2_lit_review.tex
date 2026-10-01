@@ -1,0 +1,48 @@
+\chapter{Literature Review and Theoretical Foundations}
+
+\section{Physical Foundations of WiFi Channel State Information}
+In modern wireless local area networks (WLAN) operating under IEEE 802.11n/ac/ax/be standards, orthogonal frequency-division multiplexing (OFDM) partitions wideband radio frequency (RF) channels into multiple orthogonal subcarriers. In narrowband flat-fading representations, the received signal in the frequency domain is expressed as:
+\begin{equation}
+    Y(f, t) = H(f, t) X(f, t) + N(f, t),
+\end{equation}
+where $X(f, t)$ represents the transmitted symbol, $Y(f, t)$ denotes the received signal vector, $N(f, t)$ is additive white Gaussian noise, and $H(f, t)$ represents the Channel Frequency Response (CFR), captured digitally by network interface cards as Channel State Information (CSI).
+
+In indoor multipath environments, $H(f, t)$ models the superposition of electromagnetic propagation paths:
+\begin{equation}
+    H(f, t) = \sum_{l=1}^{L} \alpha_l(t) e^{-j 2\pi f \tau_l(t)} = H_{\text{static}}(f) + H_{\text{dynamic}}(f, t),
+\end{equation}
+where $\alpha_l(t)$ and $\tau_l(t)$ denote the complex attenuation factor and time-of-flight of the $l$-th propagation path. Static reflections from immovable structural obstacles (walls, ceiling, furniture) form $H_{\text{static}}(f)$, whereas physical displacements of human bodies perturb a subset of dynamic paths, inducing time-varying phase shifts and Doppler frequency offsets.
+
+As established in the comprehensive taxonomy by Wang et al.~\cite{author2025a}, practical extraction of $H(f, t)$ from commodity transceivers introduces unsynchronized hardware non-idealities: Carrier Frequency Offset (CFO) and Sampling Time Offset (STO). These time-varying clock drifts inject phase slopes across subcarriers, obscuring the true physical phase modulation unless sanitized through calibrated inter-antenna processing.
+
+\section{Phase Sanitization and Multi-Antenna Representations}
+To overcome transceiver clock drift, early pioneering systems focused on inter-antenna phase sanitization. Wang et al. introduced PhaseBeat~\cite{author2020on}, establishing that subtracting raw phases measured concurrently across two adjacent receiving antennas cancels out common-mode phase drift and packet-level CFO, enabling non-invasive respiratory and cardiac frequency tracking. To monitor multiple occupants simultaneously, Wang et al. developed TensorBeat~\cite{author2017tensorbeat}, which organizes multi-subcarrier phase difference time series into multi-dimensional tensors to separate mixed respiratory signals using canonical polyadic tensor decomposition.
+
+Pushing sensing boundaries further, Zeng et al. designed FarSense~\cite{author2019farsense}, introducing the CSI ratio between two receive antennas:
+\begin{equation}
+    \mathcal{R}(f, t) = \frac{H_1(f, t)}{H_2(f, t)}.
+\end{equation}
+The CSI ratio cancels common-mode phase errors on simultaneous receive chains and leverages spatial amplitude-phase complementarity to significantly extend the operational range of contactless respiration sensing. However, as noted in architectural audits, coherent ratioing requires simultaneous coherent receiver chains; commodity single-chain platforms (such as the standard ESP32 with switched antenna diversity) cannot perform true concurrent CSI ratioing without dedicated multi-channel RF front-ends.
+
+\section{Cross-Domain Generalization and Physical Invariance}
+When deploying machine learning models across uncalibrated spaces, static multipath shifts alter the mapping between human kinematics and measured CSI. To decouple human motion from environmental geometry, Zheng et al. developed Widar~3.0~\cite{author2019zeroeffort}, projecting multi-link Doppler frequency shifts into coordinate-invariant Body-coordinate Velocity Profiles (BVP). By tracking the distribution of velocity vectors across body limbs rather than raw signal power, Widar~3.0 demonstrated zero-effort cross-domain gesture recognition across diverse rooms and orientations.
+
+At the representation learning level, Wang et al. introduced AirFi~\cite{author2024airfi}, establishing a multi-source domain generalization framework for passive gesture classification in completely unseen target environments without requiring target calibration data. To evaluate these methodologies at realistic scales, Zhu et al. constructed CSI-Bench~\cite{csi2025csi}, providing an extensive benchmark across 35 commercial devices, 26 real-world environments, and over 461 hours of in-the-wild recordings, which confirmed that models trained without explicit domain generalization suffer severe performance drops on unseen environments.
+
+\section{Stationary Inactivity, Fall Detection, and Vital Signs}
+In residential welfare monitoring, distinguishing safe rest from dangerous immobility is critical. For basic presence and motion detection, Zhang et al. developed WiDetect~\cite{author2019widetect}, connecting the autocorrelation function of CSI amplitudes to human motion to deliver statistical presence detection independent of static multipath.
+
+For physiological monitoring, VitalCSI~\cite{author2026vitalcsi} achieved an accuracy of 1.20 breaths/min mean absolute error across broad breathing rates using principal component analysis and spectral fusion validated against clinical nasal airflow references. Similarly, PulseFi~\cite{author2025pulsefi} explored low-cost recurrent architectures for cardiopulmonary monitoring. However, a crucial safety distinction must be maintained: detecting regular respiration confirms occupant presence during quiet sedentary rest, but cannot be treated as clinical proof of patient safety, as fall victims with fractures or concussions often remain conscious and continue breathing normally.
+
+\section{Occupant Authentication and Biometric Security Realities}
+Early research ambitiously proposed utilizing physiological heartbeat signatures extracted via CSI as biometric identifiers for intrusion detection. However, recent systematic security evaluations by Braga et al.~\cite{sok2024sok} emphasize severe open vulnerabilities in RF biometric systems, noting that unconstrained cardiac biometrics are physically unviable on single-link commodity transceivers due to low signal-to-noise ratios and respiratory harmonic masking.
+
+In contrast, dynamic gait kinematics provide a defensible modality for household occupant verification. Wang et al. introduced CAUTION~\cite{author2022caution}, formulating device-free human authentication as a few-shot open-set recognition problem. By training metric distance embeddings on walking sequences, CAUTION establishes an adaptive threshold that reliably authenticates enrolled household residents while rejecting unseen individuals without requiring prior training samples of unauthorized visitors.
+
+\section{Edge Deployment and Evaluation Rigor}
+Deploying continuous wireless sensing in domestic environments requires local, privacy-preserving execution on low-power edge nodes. Hernandez and Bulut~\cite{hernandez2024wifi} surveyed the signal processing bottlenecks, memory limitations, and real-time processing requirements of commodity edge microcontrollers, demonstrating that high-rate CSI packet capture can constrain onboard memory buffers. To mitigate communication and computation overhead, Yang et al. developed EfficientFi~\cite{author2022efficientfi}, introducing learnable quantization and deep CSI compression to reduce transmission payload by up to 100x while maintaining sensing accuracy within 3\% of uncompressed models.
+
+Finally, ensuring rigorous scientific evaluation is paramount. Varga~\cite{author2024mitigating} demonstrated that improper data partitioning that permits overlapping time-windows or subject overlap across training and test splits induces massive data leakage, artificially inflating reported model accuracy. To provide verifiable, reproducible progress, ambient sensing frameworks must enforce strict Leave-One-Subject-Out (LOSO) and Leave-One-Environment-Out (LOEO) protocols.
+
+\section{Chapter Summary}
+This chapter surveyed the physical, architectural, and algorithmic foundations of WiFi CSI sensing. The existing literature reveals three core gaps: (1) over-reliance on laboratory benchmarks with implicit data leakage, (2) failure of binary inactivity thresholds in elderly monitoring due to lack of uncertainty gating, and (3) unrealistic biometric claims on unconstrained single-link hardware. The next chapter presents our proposed physics-grounded, quality-aware framework designed to overcome these fundamental limitations.

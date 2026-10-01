@@ -1,0 +1,65 @@
+\chapter{Physics-Grounded Architecture and Quality-Gated State Machine}
+
+\section{System Architecture Overview}
+To overcome the twin vulnerabilities of domain shift and safety-critical false alerts in domestic ambient sensing, we design an end-to-end processing pipeline that explicitly decouples physical propagation constraints from high-level decision logic. As illustrated in our modular pipeline, raw Channel State Information (CSI) streams pass sequentially through:
+\begin{enumerate}
+    \item A topology-aware hardware sanitization front-end;
+    \item A dual-branch disentangled representation encoder;
+    \item A quality-gated 5-state safety finite-state machine (FSM).
+\end{enumerate}
+
+\section{Physical Feature Representation and Phase Sanitization}
+\subsection{Coherent Dual-Antenna CSI Ratio vs. Single-Chain Limitations}
+Raw CSI captures complex channel frequency responses across subcarrier frequencies $f_k$. On commodity transceivers, unsynchronized local oscillators induce unknown Carrier Frequency Offset $\Delta f(t)$ and Sampling Time Offset $\tau_{\text{sto}}(t)$. For receiver antenna $i$, the measured channel response $\widetilde{H}_i(f_k, t)$ is modeled as:
+\begin{equation}
+    \widetilde{H}_i(f_k, t) = H_i(f_k, t) \exp\left(-j 2\pi \left(\Delta f(t) t + f_k \tau_{\text{sto}}(t) + \phi_0(t)\right)\right),
+\end{equation}
+where $\phi_0(t)$ represents packet-level initial phase noise.
+
+When a receiver architecture provides multiple simultaneous, coherent receive chains driven by a single local oscillator (such as the Intel 5300 or synchronized ESPARGOS arrays~\cite{espargos2024espargos}), the time-varying oscillator phase offset is identical across antenna paths. Following Zeng et al.~\cite{author2019farsense}, computing the complex CSI ratio between two adjacent receiving antennas cancels the common-mode phase impairments:
+\begin{equation}
+    \mathcal{R}(f_k, t) = \frac{\widetilde{H}_1(f_k, t)}{\widetilde{H}_2(f_k, t)} = \frac{H_1(f_k, t)}{H_2(f_k, t)}.
+\end{equation}
+The resulting quotient $\mathcal{R}(f_k, t)$ eliminates packet-level phase drift while preserving dynamic chest perturbations and limb reflections.
+
+Crucially, as highlighted in edge microcontroller surveys by Hernandez and Bulut~\cite{hernandez2024wifi}, commodity single-chain platforms (e.g., standard ESP32 nodes) feature switched antenna diversity rather than concurrent coherent chains. Because an RF switch alternates antennas sequentially across distinct packets, the phase across successive packets is corrupted by non-zero switching latency and independent clock drift. Therefore, on single-chain edge hardware, spatial CSI ratioing is physically invalid; the pipeline must fall back to amplitude autocorrelation and relative Doppler power spectra.
+
+\section{Disentangled Representation Learning}
+A core conflict in multi-task ambient intelligence is the tension between domain-invariant activity recognition and subject-discriminative occupant verification. Forcing a single neural backbone to simultaneously learn invariant locomotion features and unique occupant biometrics results in negative transfer.
+
+We resolve this conflict by formulating two distinct, decoupled representation branches:
+\subsection{Activity Recognition Branch (Domain Invariant)}
+To classify everyday physical activities (walking, sitting, standing, picking up objects, falling) across unseen rooms, the activity encoder $\mathcal{E}_{\text{act}}$ removes environment-specific and subject-specific signatures. Drawing on adversarial domain adaptation principles from Jiang et al.~\cite{jiang2018towards} and multi-source domain generalization from AirFi~\cite{author2024airfi}, the activity encoder is trained with a gradient reversal domain discriminator:
+\begin{equation}
+    \mathcal{L}_{\text{act}} = \mathcal{L}_{\text{CE}}(\hat{y}_{\text{act}}, y_{\text{act}}) - \lambda \mathcal{L}_{\text{domain}}(\hat{d}_{\text{env}}, d_{\text{env}}),
+\end{equation}
+enforcing that the latent feature space contains zero discriminative information regarding the physical room or participant identity. To optimize edge execution, the temporal encoder is implemented as a lightweight Temporal Convolutional Network with physics-guided attention~\cite{physics2026physics}.
+
+\subsection{Occupant Verification Branch (Few-Shot Open-Set Metric)}
+In contrast to the activity branch, household security requires authenticating registered occupants while rejecting unauthorized individuals without assuming prior training samples of intruders. Closed-set Softmax classification is fundamentally flawed for security as it assigns high confidence to arbitrary unseen individuals.
+
+Following CAUTION~\cite{author2022caution} and open-set transformer architectures~\cite{argus2024argus}, our verification branch $\mathcal{E}_{\text{gait}}$ extracts metric embeddings exclusively from continuous walking locomotion segments. The model is optimized using Cosine Margin Contrastive Loss to project enrolled household members into tight, well-separated hyperspherical clusters:
+\begin{equation}
+    \mathcal{D}(\mathbf{z}_i, \mathbf{c}_k) = 1 - \frac{\mathbf{z}_i \cdot \mathbf{c}_k}{\|\mathbf{z}_i\| \|\mathbf{c}_k\|},
+\end{equation}
+where $\mathbf{c}_k$ represents the prototype centroid of enrolled resident $k$. An unseen walker is accepted if $\min_k \mathcal{D}(\mathbf{z}, \mathbf{c}_k) < \gamma_{\text{auth}}$, and rejected as an unknown visitor otherwise. This formulation eliminates unverified claims of heartbeat biometrics while providing robust open-set gait verification.
+
+\section{The 5-State Uncertainty-Aware Finite State Machine}
+To prevent catastrophic false alerts and alert fatigue in domestic environments, high-level reasoning is governed by a 5-state Finite State Machine:
+\begin{enumerate}
+    \item \textbf{STATE\_UNKNOWN:} Sensor measurements exhibit insufficient signal-to-noise ratio, packet drop bursts, or ambiguous multipath interference.
+    \item \textbf{STATE\_VACANT:} The monitored zone is empty, verified by baseline autocorrelation noise and verified exit transition sequences~\cite{author2019widetect}.
+    \item \textbf{STATE\_OCCUPIED\_ACTIVE:} Dynamic human locomotion or posture transitions are detected with high classification confidence.
+    \item \textbf{STATE\_STATIONARY\_OCCUPIED:} Sedentary rest (e.g., sleeping, reading, watching television) where macroscopic motion ceases but physiological chest respiration is observable~\cite{author2026vitalcsi}.
+    \item \textbf{STATE\_ALERT\_REQUIRED:} Emergency conditions triggered by verified fall impact signatures or prolonged immobility exceeding safety thresholds.
+\end{enumerate}
+
+\section{Safety Invariants and Medical Gating Logic}
+Domestic welfare systems must respect rigorous safety logic. We formalize two non-negotiable safety invariants:
+\begin{itemize}
+    \item \textbf{Safety Invariant 1 (Non-Suppression of Fall Emergencies):} When a rapid downward acceleration profile and high-energy impact signature indicate a potential fall~\cite{wang2017rt}, the FSM transitions directly to \texttt{STATE\_ALERT\_REQUIRED}. Subsequent observation of periodic respiration \emph{must never} cancel, downgrade, or clear the emergency state. Clinically, elderly individuals suffering hip fractures, subdural hematomas, or trauma frequently remain conscious and continue breathing while immobilized on the floor.
+    \item \textbf{Safety Invariant 2 (Observability vs. Pathology Gating):} In \texttt{STATE\_STATIONARY\_OCCUPIED}, if the estimated respiration quality metric drops below detection threshold $\theta_{\text{resp}}$, the system transitions to \texttt{STATE\_UNKNOWN} (unobservable channel state due to destructive multipath nulls), rather than emitting an unverified apnea or cardiac arrest alert.
+\end{itemize}
+
+\section{Chapter Summary}
+This chapter detailed the physical foundations, disentangled dual-branch encoders, and 5-state safety architecture of our proposed framework. By aligning signal preprocessing with antenna hardware capabilities and strictly enforcing safety invariants, the framework resolves both environmental domain shift and dangerous clinical false alerts.

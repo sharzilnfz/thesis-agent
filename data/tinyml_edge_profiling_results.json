@@ -1,0 +1,32 @@
+{
+  "architecture_name": "Physics-Guided Lightweight TCN",
+  "total_parameters": 58646,
+  "total_macs": 5583232,
+  "peak_activation_elements": 6400,
+  "memory_footprint": {
+    "fp32_parameters_kb": 229.09,
+    "int8_parameters_kb": 57.27,
+    "fp32_activation_buffer_kb": 50.0,
+    "int8_activation_buffer_kb": 12.5,
+    "fp32_total_sram_kb": 279.09,
+    "int8_total_sram_kb": 69.77
+  },
+  "platforms": {
+    "esp32_s3": {
+      "clock_speed": "240 MHz (Xtensa LX7)",
+      "usable_sram_limit_kb": 320.0,
+      "fp32_deployment_possible": true,
+      "int8_deployment_possible": true,
+      "int8_latency_ms": 41.87,
+      "max_inference_rate_hz": 23.9,
+      "verdict": "INT8 fits safely within internal SRAM with real-time throughput (>20 Hz)"
+    },
+    "raspberry_pi_4b": {
+      "clock_speed": "1.5 GHz (ARM Cortex-A72 Quad)",
+      "fp32_latency_ms": 2.61,
+      "int8_latency_ms": 0.93,
+      "int8_max_inference_rate_hz": 1074.6,
+      "verdict": "High-throughput gateway execution with ample resource headroom"
+    }
+  }
+}

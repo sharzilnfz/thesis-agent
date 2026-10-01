@@ -1,0 +1,239 @@
+[
+  {
+    "gap_id": "GAP-01",
+    "naive_claim": "Commodity-WiFi heartbeat biometrics physically impossible",
+    "audit_verdict": "Unsupported absolute claim",
+    "scientific_replacement": "Exclude unconstrained heartbeat identification as unvalidated and out of scope, not physically impossible",
+    "validation_requirement": "PhaseBeat demonstrates constrained single-link HR estimation, not identity",
+    "source_reference": "[web:7]",
+    "url": "https://www.eng.auburn.edu/~szm0001/papers/PhaseBeat_ACMHealth20.pdf",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "sok2024sok",
+      "author2020on"
+    ]
+  },
+  {
+    "gap_id": "GAP-02",
+    "naive_claim": "Universal 30-40 dB SNR deficit from displacement",
+    "audit_verdict": "Not established",
+    "scientific_replacement": "Require link-budget derivation and measured interference/noise; displacement contrast is not SNR",
+    "validation_requirement": "Inspect origin of displacement ranges and assumptions",
+    "source_reference": "",
+    "url": "",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2025a"
+    ]
+  },
+  {
+    "gap_id": "GAP-03",
+    "naive_claim": "Closed-set classification establishes intruder detection",
+    "audit_verdict": "Incorrect security formulation",
+    "scientific_replacement": "Use enrolled-vs-unseen identity rejection; unknown does not imply malicious intent",
+    "validation_requirement": "Separate known-user sessions and unknown identity calibration/test",
+    "source_reference": "[web:14]",
+    "url": "https://github.com/xyanchen/WiFi-CSI-Sensing-Benchmark",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2022caution"
+    ]
+  },
+  {
+    "gap_id": "GAP-04",
+    "naive_claim": "Respiration proves safe rest",
+    "audit_verdict": "Unsafe inference",
+    "scientific_replacement": "Respiration detected does not prove consciousness or safety",
+    "validation_requirement": "Do not cancel suspected-fall escalation because breathing is detected",
+    "source_reference": "[web:197]",
+    "url": "https://www.redcross.org.uk/first-aid/learn-first-aid/unresponsive-and-breathing",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2026vitalcsi"
+    ]
+  },
+  {
+    "gap_id": "GAP-05",
+    "naive_claim": "No respiration signal proves medical distress",
+    "audit_verdict": "Invalid inverse inference",
+    "scientific_replacement": "Output unobservable when measurement quality is inadequate",
+    "validation_requirement": "Test geometry blind spots, network failures and stationary reference breathing",
+    "source_reference": "[web:49]",
+    "url": "https://arxiv.org/abs/1907.03994",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2019farsense"
+    ]
+  },
+  {
+    "gap_id": "GAP-06",
+    "naive_claim": "Varga 2024 proves overlapping-window leakage across benchmarks",
+    "audit_verdict": "Overgeneralized attribution",
+    "scientific_replacement": "The retrieved study audits subject-overlap in CSI-HAR: 420 samples, 3 volunteers",
+    "validation_requirement": "Audit temporal overlap separately in code and raw-record metadata",
+    "source_reference": "[web:91]",
+    "url": "https://www.mdpi.com/1424-8220/24/24/8201",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2024mitigating"
+    ]
+  },
+  {
+    "gap_id": "GAP-07",
+    "naive_claim": "Correct LOSO/LOEO is immediately novel/publishable",
+    "audit_verdict": "Not established",
+    "scientific_replacement": "Good evaluation is mandatory; novelty requires broader evidence or method insight",
+    "validation_requirement": "Define a falsifiable contribution beyond corrected splitting",
+    "source_reference": "",
+    "url": "",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2025a"
+    ]
+  },
+  {
+    "gap_id": "GAP-08",
+    "naive_claim": "Widar3.0 requires six synchronized nodes",
+    "audit_verdict": "Incorrect count/requirement",
+    "scientific_replacement": "Original paper specifies one transmitter and at least three receivers; experiment uses six receivers",
+    "validation_requirement": "Declare actual spatial links and view requirements",
+    "source_reference": "[web:27]",
+    "url": "https://cswu.me/papers/mobisys19_widar3_paper.pdf",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2019zeroeffort"
+    ]
+  },
+  {
+    "gap_id": "GAP-09",
+    "naive_claim": "Ratio eliminates static multipath and all phase noise",
+    "audit_verdict": "False as stated",
+    "scientific_replacement": "Common-mode phase cancels under shared-clock same-packet assumptions; multipath and residual noise remain",
+    "validation_requirement": "Compare raw amplitude, phase difference, ratio and conjugate product",
+    "source_reference": "[web:49][web:7]",
+    "url": "https://arxiv.org/abs/1907.03994",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2019farsense"
+    ]
+  },
+  {
+    "gap_id": "GAP-10",
+    "naive_claim": "ESP32 switched antennas support FarSense-style ratio",
+    "audit_verdict": "Hardware mismatch",
+    "scientific_replacement": "Antenna switching is not simultaneous coherent receive chains",
+    "validation_requirement": "Verify exact receiver CSI shape and clock topology",
+    "source_reference": "[web:206]",
+    "url": "https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32/api-guides/wifi.html",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "hernandez2024wifi"
+    ]
+  },
+  {
+    "gap_id": "GAP-11",
+    "naive_claim": "Quiet timeout establishes vacant room",
+    "audit_verdict": "Invalid state transition",
+    "scientific_replacement": "Quiet should trigger stationary/unknown observation, not vacancy",
+    "validation_requirement": "Require exit evidence and occupancy evidence",
+    "source_reference": "",
+    "url": "",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2019widetect"
+    ]
+  },
+  {
+    "gap_id": "GAP-12",
+    "naive_claim": "PDR confirms fall impact",
+    "audit_verdict": "Overstated",
+    "scientific_replacement": "Treat as candidate feature requiring fall-vs-confounder validation",
+    "validation_requirement": "Test fast sitting, lying down, objects dropped and interference",
+    "source_reference": "[web:167][web:153]",
+    "url": "https://dl.acm.org/doi/10.1145/3161183",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "csi2025csi"
+    ]
+  },
+  {
+    "gap_id": "GAP-13",
+    "naive_claim": "Sample entropy validates physiological liveness",
+    "audit_verdict": "Unverified mechanism",
+    "scientific_replacement": "Use as candidate feature only alongside signal quality and reference sensors",
+    "validation_requirement": "Test fan-induced periodicity and flat/invalid windows",
+    "source_reference": "",
+    "url": "",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2026vitalcsi"
+    ]
+  },
+  {
+    "gap_id": "GAP-14",
+    "naive_claim": "CSI-Bench supports complex CSI-ratio front-end validation",
+    "audit_verdict": "Incompatible with described released representation",
+    "scientific_replacement": "Paper uses amplitude-only features and classification; breathing subset has 3 users and 3 environments",
+    "validation_requirement": "Inspect release files; use only applicable tasks and retain original temporal provenance",
+    "source_reference": "[web:181]",
+    "url": "https://arxiv.org/html/2505.21866v1",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "csi2025csi"
+    ]
+  },
+  {
+    "gap_id": "GAP-15",
+    "naive_claim": "WiMANS validates fall and respiration monitoring",
+    "audit_verdict": "Not supported",
+    "scientific_replacement": "Nine daily-activity classes; 3-second clips; no falls or physiological reference",
+    "validation_requirement": "Use for activity/occupancy extension only",
+    "source_reference": "[web:133]",
+    "url": "https://arxiv.org/html/2402.09430v2",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2024airfi"
+    ]
+  },
+  {
+    "gap_id": "GAP-16",
+    "naive_claim": "SenseFi is an independent raw-CSI dataset",
+    "audit_verdict": "Incorrect category",
+    "scientific_replacement": "Library/benchmark bundling datasets; processed Widar is multiview-derived BVP",
+    "validation_requirement": "Use baseline code; audit underlying raw datasets separately",
+    "source_reference": "[web:14]",
+    "url": "https://github.com/xyanchen/WiFi-CSI-Sensing-Benchmark",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2019zeroeffort"
+    ]
+  },
+  {
+    "gap_id": "GAP-17",
+    "naive_claim": "Subject-invariant encoder simultaneously preserves gait identity",
+    "audit_verdict": "Conflicting objectives if fully shared",
+    "scientific_replacement": "Separate identity-preserving and activity-invariant representations",
+    "validation_requirement": "Measure identity retention and activity generalization independently",
+    "source_reference": "",
+    "url": "",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "author2022caution",
+      "author2024airfi"
+    ]
+  },
+  {
+    "gap_id": "GAP-18",
+    "naive_claim": "BabyMamba-HAR proves complete CSI pipeline fits ESP32",
+    "audit_verdict": "Partially supported, overextended",
+    "scientific_replacement": "v2 reports inertial-HAR ESP32 deployment; WiFi preprocessing and concurrent capture untested",
+    "validation_requirement": "Freeze v2; audit numerical inconsistencies and profile full pipeline",
+    "source_reference": "[web:177]",
+    "url": "https://arxiv.org/html/2602.09872v2",
+    "status": "addressed_in_framework",
+    "cross_referenced_bib_keys": [
+      "hernandez2024wifi",
+      "author2022efficientfi"
+    ]
+  }
+]

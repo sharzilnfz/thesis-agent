@@ -1,0 +1,1742 @@
+{
+  "arxiv:2503.08008": {
+    "id": "arxiv:2503.08008",
+    "doi": "",
+    "arxiv_id": "arxiv:2503.08008",
+    "title": "A Survey on Wi-Fi Sensing Generalizability: Taxonomy, Techniques, Datasets, and Future Research Prospects",
+    "authors": [
+      "author"
+    ],
+    "year": 2025,
+    "venue": "arXiv survey",
+    "bibtex_key": "author2025a",
+    "abstract": "Wi-Fi sensing has emerged as a powerful non- intrusive technology for recognizing human activities, monitor- ing vital signs, and enabling context-aware applications using commercial wireless devices. However, the performance of Wi- Fi sensing often degrades when applied to new users, devices, or environments due to significant domain shifts. To address this challenge, researchers have proposed a wide range of generalization techniques aimed at enhancing the robustness and adaptability of Wi-Fi sensing systems. In this survey, we provide a comprehensive and structured review of over 200 papers published since 2015, categorizing them according to the Wi-Fi sensing pipeline: experimental setup, signal prepro- cessing, feature learning, and model deployment. We analyze key techniques, including signal preprocessing, domain adapta- tion, meta-learning, metric learning, data augmentation, cross- modal alignment, federated learning, and continual learning. Furthermore, we summarize publicly available datasets across various tasks, such as activity recognition, user identification, indoor localization, and pose estimation, and provide insights into their domain diversity. We also discuss ",
+    "pdf_path": "data/raw_papers/05_Wang_et_al_2025_Generalizability_Survey_COMST_arXiv_2503_080.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Read first)",
+    "metadata": {
+      "source_url": "https://arxiv.org/html/2503.08008v3",
+      "theme": "Survey",
+      "priority": "Read first",
+      "what_to_build_on": "Map domain factors and methods",
+      "limitation_or_check": "Survey; does not establish novelty of proposed thesis"
+    },
+    "category": "Survey & Foundations"
+  },
+  "matrix::a survey on vital si": {
+    "id": "matrix::a survey on vital si",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "A survey on vital signs monitoring based on Wi-Fi CSI data",
+    "authors": [
+      "author"
+    ],
+    "year": 2022,
+    "venue": "Computer Communications",
+    "bibtex_key": "author2022a",
+    "abstract": "Theme: Survey. Focus: Understand respiration and heart-rate pipelines. Limitation: Older survey; reported metrics are heterogeneous",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Read first)",
+    "metadata": {
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9375645/",
+      "theme": "Survey",
+      "priority": "Read first",
+      "what_to_build_on": "Understand respiration and heart-rate pipelines",
+      "limitation_or_check": "Older survey; reported metrics are heterogeneous"
+    }
+  },
+  "matrix::zero-effort cross-do": {
+    "id": "matrix::zero-effort cross-do",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "Zero-Effort Cross-Domain Gesture Recognition with Wi-Fi (Widar3.0)",
+    "authors": [
+      "author"
+    ],
+    "year": 2019,
+    "venue": "ACM MobiSys",
+    "bibtex_key": "author2019zeroeffort",
+    "abstract": "Wi-Fi based sensing systems, although sound as being deployed almost everywhere there is Wi-Fi, are still practically difficult to be used without explicit adaptation efforts to new data domains. Various pioneering approaches have been proposed to resolve this contradiction by either translating features between domains or generating domain-independent features at a higher learning level. Still, extra training efforts are necessary in either data collection or model re-training when new data domains appear, limiting their practical usability. To advance cross-domain sensing and achieve fully zero-effort sensing, a domain-independent feature at the lower signal level acts as a key enabler. In this paper, we propose Widar3.0, a Wi-Fi based zero-effort cross-domain gesture recognition system. The key insight of Widar3.0 is to derive and estimate velocity pro- files of gestures at the lower signal level, which represent unique kinetic characteristics of gestures and are irrespective of domains. On this basis, we develop a one-fits-all model that requires only one-time training but can adapt to different data domains. We im- plement this design and conduct comprehensive experiments. The",
+    "pdf_path": "data/raw_papers/23_Zheng_et_al_Widar3_0_SIGCOMM_2019.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://cswu.me/papers/mobisys19_widar3_paper.pdf",
+      "theme": "Generalization",
+      "priority": "Core",
+      "what_to_build_on": "Physics-linked velocity representations",
+      "limitation_or_check": "Gestures, not continuous vital signs; deployment requirements matter"
+    },
+    "category": "Domain Generalization & Transfer"
+  },
+  "arxiv:2209.10285": {
+    "id": "arxiv:2209.10285",
+    "doi": "",
+    "arxiv_id": "arxiv:2209.10285",
+    "title": "AirFi: Empowering WiFi-Based Passive Human Gesture Recognition to Unseen Environment via Domain Generalization",
+    "authors": [
+      "author"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Mobile Computing",
+    "bibtex_key": "author2024airfi",
+    "abstract": "WiFi-based smart human sensing technology enabled by Channel State Information (CSI) has received great attention in recent years. However, CSI-based sensing systems suffer from performance degradation when deployed in different environments. Existing works solve this problem by domain adaptation using massive unlabeled high- quality data from the new environment, which is usually unavailable in practice. In this paper, we propose a novel augmented environment- invariant robust WiFi gesture recognition system named AirFi that deals with the issue of environment dependency from a new perspective. The AirFi is a novel domain generalization framework that learns the critical part of CSI regardless of different environments and generalizes the model to unseen scenarios, which does not require collecting any data for adaptation to the new environment. AirFi extracts the common features from several training environment settings and minimizes the distribution differences among them. The feature is further augmented to be more robust to environments. Moreover, the system can be further improved by few-shot learning techniques. Compared to state-of-the-art methods, AirFi is able to work in",
+    "pdf_path": "data/raw_papers/author2024airfi.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://ar5iv.labs.arxiv.org/html/2209.10285",
+      "theme": "Generalization",
+      "priority": "Core",
+      "what_to_build_on": "Source-domain alignment and augmentation baseline",
+      "limitation_or_check": "Gesture classification; few-shot extension is not zero-target-data DG"
+    },
+    "category": "Domain Generalization & Transfer"
+  },
+  "doi:10.1145/3351280": {
+    "id": "doi:10.1145/3351280",
+    "doi": "doi:10.1145/3351280",
+    "arxiv_id": "",
+    "title": "WiDetect: Robust Motion Detection with a Statistical Electromagnetic Model",
+    "authors": [
+      "author"
+    ],
+    "year": 2019,
+    "venue": "ACM IMWUT",
+    "bibtex_key": "author2019widetect",
+    "abstract": "Theme: Motion. Focus: Statistical motion baseline. Limitation: Motion detection is not stationary occupancy or authorization",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://dl.acm.org/doi/10.1145/3351280",
+      "theme": "Motion",
+      "priority": "Core",
+      "what_to_build_on": "Statistical motion baseline",
+      "limitation_or_check": "Motion detection is not stationary occupancy or authorization"
+    }
+  },
+  "arxiv:1907.03994": {
+    "id": "arxiv:1907.03994",
+    "doi": "",
+    "arxiv_id": "arxiv:1907.03994",
+    "title": "FarSense: Pushing the Range Limit of WiFi-based Respiration Sensing with CSI Ratio of Two Antennas",
+    "authors": [
+      "author"
+    ],
+    "year": 2019,
+    "venue": "ACM IMWUT",
+    "bibtex_key": "author2019farsense",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2019 Association for Computing Machinery. 2474-9567/2019/9-ART121 $15.00 https://doi.org/10.1145/3351279 Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 3, No. 3, Article 121. Publication date: September 2019. arXiv:1907.03994v3 [eess.SP] 10 Aug 2019 121:2 • Zeng et al. Receiver Transmitter Reflected by wall Reflected by human target Line of sight Reflected by floor Fig. 1. In an indoor environment, WiFi signals propagate through multiple paths before arriving at the receiver, thus carrying information about the environment. Additional Key Words and Phrases: Respiration sensing, WiFi, Channel state information (CSI), CSI-ratio model ACM Reference Format: Youwei Zeng, Dan Wu, Jie Xiong, Enze Yi, Ruiyang Gao, and Daqing Zhang. 2019. FarSense: Pushing the Range Limit of WiFi-based Respiration Sensing with CSI Ratio of Two Antennas. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 3, 3, Article 121 (September 2019), 26 pages. https://doi.org/10.1145/3351279",
+    "pdf_path": "data/raw_papers/25_Zeng_et_al_FarSense_MobiCom_2019.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://arxiv.org/abs/1907.03994",
+      "theme": "Respiration",
+      "priority": "Core",
+      "what_to_build_on": "CSI ratio and amplitude-phase complementarity",
+      "limitation_or_check": "Two receive antennas; 8 m is an experimental result, not a guarantee"
+    },
+    "category": "Vital Signs & Respiration"
+  },
+  "matrix::on csi-based vital s": {
+    "id": "matrix::on csi-based vital s",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "On CSI-Based Vital Sign Monitoring Using Commodity WiFi (PhaseBeat)",
+    "authors": [
+      "author"
+    ],
+    "year": 2020,
+    "venue": "ACM Transactions on Computing for Healthcare",
+    "bibtex_key": "author2020on",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2020 Copyright held by the owner/author(s). Publication rights licensed to ACM. 2637-8051/2020/05-ART12 $15.00 https://doi.org/10.1145/3377165 ACM Transactions on Computing for Healthcare, Vol. 1, No. 3, Article 12. Publication date: May 2020. 12:2 • X. Wang et al. patient. Alternative solutions of contact-free, easy deployment, low-cost, and long-term vital sign monitoring would be highly appealing. Various forms of contact-free sensors have been proposed to detect human vital signs, such as cameras, smart- phones, and geophones. Camera-based techniques can monitor the breathing rate and heart rate by analyzing the captured video of human body [Scully et al. 2010]. However, the system requires sufficient surrounding light to achieve the best performance. Thus, it may not be suitable for sleep monitoring. To address the influence of a dark sensing environment, acoustic signals are proposed for vital sign monitoring [Nandakumar et al. 2019, 2015; Wang et al. 2017b]. With the emb",
+    "pdf_path": "data/raw_papers/author2020on.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://www.eng.auburn.edu/~szm0001/papers/PhaseBeat_ACMHealth20.pdf",
+      "theme": "Vital signs",
+      "priority": "Core",
+      "what_to_build_on": "Phase difference, wavelets, stationary-state gating",
+      "limitation_or_check": "Four participants; directional transmit antenna for heartbeat"
+    },
+    "category": "Vital Signs & Respiration"
+  },
+  "matrix::vitalcsi: contactles": {
+    "id": "matrix::vitalcsi: contactles",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "VitalCSI: Contactless Respiratory Rate Estimation Using Consumer-Grade Wi-Fi Channel State Information",
+    "authors": [
+      "author"
+    ],
+    "year": 2026,
+    "venue": "Sensors",
+    "bibtex_key": "author2026vitalcsi",
+    "abstract": "Theme: Respiration. Focus: PCA, spectral and breath-count fusion; airflow reference. Limitation: 15 healthy athletes under controlled seated protocol; already has quality indices",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://www.mdpi.com/1424-8220/26/1/225",
+      "theme": "Respiration",
+      "priority": "Core",
+      "what_to_build_on": "PCA, spectral and breath-count fusion; airflow reference",
+      "limitation_or_check": "15 healthy athletes under controlled seated protocol; already has quality indices"
+    }
+  },
+  "arxiv:2510.24744": {
+    "id": "arxiv:2510.24744",
+    "doi": "",
+    "arxiv_id": "arxiv:2510.24744",
+    "title": "PulseFi: A Low Cost Robust Machine Learning System for Accurate Cardiopulmonary and Apnea Monitoring Using Channel State Information",
+    "authors": [
+      "author"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "bibtex_key": "author2025pulsefi",
+    "abstract": "Non-intrusive monitoring of vital signs has become increasingly important in a variety of healthcare settings. In this paper, we present PulseFi, a novel low-cost non-intrusive system that uses Wi-Fi sensing and artificial intelligence to accurately and continuously monitor heart rate and breathing rate, as well as detect apnea events. PulseFi operates using low-cost commodity devices, making it more accessible and cost-effective. It uses a signal processing pipeline to process Wi-Fi telemetry data, specifically Channel State Information (CSI), that is fed into a custom low-compute Long Short-Term Memory (LSTM) neural network model. We evaluate PulseFi using two datasets: one that we collected locally using ESP32 devices and another that contains recordings of 118 participants collected using the Raspberry Pi 4B, making the latter the most comprehensive data set of its kind. Our results show that PulseFi can effectively estimate heart rate and breathing rate in a seemless non-intrusive way with comparable or better accuracy than multiple antenna systems that can be expensive and less accessible.",
+    "pdf_path": "data/raw_papers/author2025pulsefi.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core audit)",
+    "metadata": {
+      "source_url": "https://arxiv.org/html/2510.24744v1",
+      "theme": "Vital signs",
+      "priority": "Core audit",
+      "what_to_build_on": "Amplitude-only compact LSTM baseline",
+      "limitation_or_check": "Overlapping windows and shuffled partition warrant audit; breath holds are not clinical apnea"
+    },
+    "category": "Vital Signs & Respiration"
+  },
+  "doi:10.1145/3078855": {
+    "id": "doi:10.1145/3078855",
+    "doi": "doi:10.1145/3078855",
+    "arxiv_id": "",
+    "title": "TensorBeat: Tensor Decomposition for Monitoring Multiperson Breathing Beats with Commodity WiFi",
+    "authors": [
+      "author"
+    ],
+    "year": 2017,
+    "venue": "ACM Transactions on Intelligent Systems and Technology",
+    "bibtex_key": "author2017tensorbeat",
+    "abstract": "Theme: Multi-person respiration. Focus: Tensor decomposition baseline. Limitation: Multi-person separation and component-to-person attribution require separate evaluation",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Extension)",
+    "metadata": {
+      "source_url": "https://dl.acm.org/doi/10.1145/3078855",
+      "theme": "Multi-person respiration",
+      "priority": "Extension",
+      "what_to_build_on": "Tensor decomposition baseline",
+      "limitation_or_check": "Multi-person separation and component-to-person attribution require separate evaluation"
+    }
+  },
+  "matrix::enabling multi-perso": {
+    "id": "matrix::enabling multi-perso",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "Enabling Multi-person Respiration Sensing with Commodity WiFi (MultiSense)",
+    "authors": [
+      "author"
+    ],
+    "year": 2020,
+    "venue": "ACM IMWUT",
+    "bibtex_key": "author2020enabling",
+    "abstract": "Theme: Multi-person respiration. Focus: ICA-based source separation. Limitation: Requires usable spatial mixtures; extraction does not establish identity",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Extension)",
+    "metadata": {
+      "source_url": "https://hal.science/hal-03363355/file/3411816.pdf",
+      "theme": "Multi-person respiration",
+      "priority": "Extension",
+      "what_to_build_on": "ICA-based source separation",
+      "limitation_or_check": "Requires usable spatial mixtures; extraction does not establish identity"
+    }
+  },
+  "matrix::witraj: robust indoo": {
+    "id": "matrix::witraj: robust indoo",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "WiTraj: Robust Indoor Motion Tracking With WiFi Signals",
+    "authors": [
+      "author"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Mobile Computing",
+    "bibtex_key": "author2023witraj",
+    "abstract": "Theme: Tracking. Focus: CSI ratio, multiple views, walking/in-place separation. Limitation: Three receiver views; trajectory tracking is distinct from room classification",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Extension)",
+    "metadata": {
+      "source_url": "https://hal.science/hal-03548446/file/WiTraj_Robust_Indoor_Motion_Tracking_with_WiFi_Signals.pdf",
+      "theme": "Tracking",
+      "priority": "Extension",
+      "what_to_build_on": "CSI ratio, multiple views, walking/in-place separation",
+      "limitation_or_check": "Three receiver views; trajectory tracking is distinct from room classification"
+    }
+  },
+  "matrix::breathid: respiratio": {
+    "id": "matrix::breathid: respiratio",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "BreathID: Respiration Sensing for Human Identification Using Commodity Wi-Fi",
+    "authors": [
+      "author"
+    ],
+    "year": 2023,
+    "venue": "IEEE Systems Journal",
+    "bibtex_key": "author2023breathid",
+    "abstract": "Theme: Identity. Focus: Direct respiration-identification prior art. Limitation: Publisher full text not retrieved; longitudinal and open-set protocol must be checked",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Identity core)",
+    "metadata": {
+      "source_url": "https://ieeexplore.ieee.org/document/9849136",
+      "theme": "Identity",
+      "priority": "Identity core",
+      "what_to_build_on": "Direct respiration-identification prior art",
+      "limitation_or_check": "Publisher full text not retrieved; longitudinal and open-set protocol must be checked"
+    }
+  },
+  "matrix::caution: a robust wi": {
+    "id": "matrix::caution: a robust wi",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "CAUTION: A Robust WiFi-Based Human Authentication System via Few-Shot Open-Set Recognition",
+    "authors": [
+      "author"
+    ],
+    "year": 2022,
+    "venue": "IEEE Internet of Things Journal",
+    "bibtex_key": "author2022caution",
+    "abstract": "Theme: Identity. Focus: Unknown-user rejection and few-shot gait enrollment. Limitation: Gait-based, not heartbeat biometrics; examine room/session split",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Identity core)",
+    "metadata": {
+      "source_url": "https://ieeexplore.ieee.org/document/9726794/",
+      "theme": "Identity",
+      "priority": "Identity core",
+      "what_to_build_on": "Unknown-user rejection and few-shot gait enrollment",
+      "limitation_or_check": "Gait-based, not heartbeat biometrics; examine room/session split"
+    }
+  },
+  "arxiv:2507.12869": {
+    "id": "arxiv:2507.12869",
+    "doi": "",
+    "arxiv_id": "arxiv:2507.12869",
+    "title": "WhoFi: Deep Person Re-Identification via Wi-Fi Channel Signal Encoding",
+    "authors": [
+      "author"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint version reviewed",
+    "bibtex_key": "author2025whofi",
+    "abstract": "Person Re-Identification is a key and challenging task in video surveillance. While traditional methods rely on visual data, is- sues like poor lighting, occlusion, and suboptimal angles often hinder performance. To address these challenges, we introduce WhoFi, a novel pipeline that utilizes Wi-Fi signals for person re-identification. Biomet- ric features are extracted from Channel State Information (CSI) and processed through a modular Deep Neural Network (DNN) featuring a Transformer-based encoder. The network is trained using an in-batch negative loss function to learn robust and generalizable biometric sig- natures. Experiments on the NTU-Fi dataset show that our approach achieves competitive results compared to state-of-the-art methods, con- firming its effectiveness in identifying individuals via Wi-Fi signals.",
+    "pdf_path": "data/raw_papers/author2025whofi.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Identity extension)",
+    "metadata": {
+      "source_url": "https://arxiv.org/html/2507.12869v1",
+      "theme": "Identity",
+      "priority": "Identity extension",
+      "what_to_build_on": "Transformer metric embedding baseline",
+      "limitation_or_check": "14-person NTU-Fi walking dataset; no demonstrated heartbeat mechanism"
+    },
+    "category": "Occupant Identity & Biometrics"
+  },
+  "matrix::sensefi: a library a": {
+    "id": "matrix::sensefi: a library a",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "SenseFi: A Library and Benchmark on Deep-Learning-Empowered WiFi Human Sensing",
+    "authors": [
+      "author"
+    ],
+    "year": 2023,
+    "venue": "Patterns",
+    "bibtex_key": "author2023sensefi",
+    "abstract": "Theme: Benchmark. Focus: Reusable CNN, GRU, LSTM and Transformer code. Limitation: Audit packaged splits against your target deployment claim",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Implementation core)",
+    "metadata": {
+      "source_url": "https://github.com/xyanchen/WiFi-CSI-Sensing-Benchmark",
+      "theme": "Benchmark",
+      "priority": "Implementation core",
+      "what_to_build_on": "Reusable CNN, GRU, LSTM and Transformer code",
+      "limitation_or_check": "Audit packaged splits against your target deployment claim"
+    }
+  },
+  "matrix::csi-bench: a large-s": {
+    "id": "matrix::csi-bench: a large-s",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "CSI-Bench: A Large-Scale In-the-Wild Dataset for Multi-task WiFi Sensing",
+    "authors": [
+      "author"
+    ],
+    "year": 2025,
+    "venue": "NeurIPS dataset/benchmark paper",
+    "bibtex_key": "author2025csibench",
+    "abstract": "Theme: Benchmark. Focus: Real-world multitask external evaluation. Limitation: Task-specific label availability differs; breathing detection is not necessarily rate regression",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://neurips.cc/virtual/2025/poster/121605",
+      "theme": "Benchmark",
+      "priority": "Core",
+      "what_to_build_on": "Real-world multitask external evaluation",
+      "limitation_or_check": "Task-specific label availability differs; breathing detection is not necessarily rate regression"
+    }
+  },
+  "arxiv:2402.09430": {
+    "id": "arxiv:2402.09430",
+    "doi": "",
+    "arxiv_id": "arxiv:2402.09430",
+    "title": "WiMANS: A Benchmark Dataset for WiFi-based Multi-user Activity Sensing",
+    "authors": [
+      "author"
+    ],
+    "year": 2024,
+    "venue": "arXiv version reviewed",
+    "bibtex_key": "author2024wimans",
+    "abstract": "WiFi-based human sensing has exhibited remarkable poten- tial to analyze user behaviors in a non-intrusive and device-free man- ner, benefiting applications as diverse as smart homes and healthcare. However, most previous works focus on single-user sensing, which has limited practicability in scenarios involving multiple users. Although re- cent studies have begun to investigate WiFi-based multi-user sensing, there remains a lack of benchmark datasets to facilitate reproducible and comparable research. To bridge this gap, we present WiMANS, to our knowledge, the first dataset for multi-user sensing based on WiFi. WiMANS contains over 9.4 hours of dual-band WiFi Channel State In- formation (CSI), as well as synchronized videos, monitoring simultane- ous activities of multiple users. We exploit WiMANS to benchmark the performance of state-of-the-art WiFi-based human sensing models and video-based models, posing new challenges and opportunities for future work. We believe WiMANS can push the boundaries of current studies and catalyze the research on WiFi-based multi-user sensing.",
+    "pdf_path": "data/raw_papers/44_WiMANS_ECCV_2024_arXiv_2402_09430.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Multi-person extension)",
+    "metadata": {
+      "source_url": "https://arxiv.org/html/2402.09430v2",
+      "theme": "Benchmark",
+      "priority": "Multi-person extension",
+      "what_to_build_on": "0-5 users, identity/location/activity annotations",
+      "limitation_or_check": "3-second scripts; no physiological waveform reference; original baseline splits within environments"
+    },
+    "category": "Domain Generalization & Transfer"
+  },
+  "matrix::ehealth csi: a wi-fi": {
+    "id": "matrix::ehealth csi: a wi-fi",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "eHealth CSI: A Wi-Fi CSI Dataset of Human Activities",
+    "authors": [
+      "author"
+    ],
+    "year": 2023,
+    "venue": "IEEE Access",
+    "bibtex_key": "author2023ehealth",
+    "abstract": "Theme: Benchmark. Focus: HR estimation and activity dataset; updated DS1/DS2 documentation. Limitation: Access agreement required; do not assume measured respiration labels",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Vital baseline)",
+    "metadata": {
+      "source_url": "https://github.com/csi-ehealth/Welcome",
+      "theme": "Benchmark",
+      "priority": "Vital baseline",
+      "what_to_build_on": "HR estimation and activity dataset; updated DS1/DS2 documentation",
+      "limitation_or_check": "Access agreement required; do not assume measured respiration labels"
+    }
+  },
+  "arxiv:2302.00992": {
+    "id": "arxiv:2302.00992",
+    "doi": "",
+    "arxiv_id": "arxiv:2302.00992",
+    "title": "Exposing the CSI: A Systematic Investigation of CSI-based Wi-Fi Sensing Capabilities and Limitations",
+    "authors": [
+      "author"
+    ],
+    "year": 2023,
+    "venue": "IEEE PerCom",
+    "bibtex_key": "author2023exposing",
+    "abstract": "Thanks to the ubiquitous deployment of Wi-Fi hotspots, channel state information (CSI)-based Wi-Fi sensing can unleash game-changing applications in many ﬁelds, such as healthcare, security, and entertainment. However, despite one decade of active research on Wi-Fi sensing, most existing work only considers legacy IEEE 802.11n devices, often in particular and strictly-controlled environments. Worse yet, there is a funda- mental lack of understanding of the impact on CSI-based sensing of modern Wi-Fi features, such as 160-MHz bandwidth, multiple- input multiple-output (MIMO) transmissions, and increased spectral resolution in IEEE 802.11ax (Wi-Fi 6). This work aims to shed light on the impact of Wi-Fi 6 features on the sensing performance and to create a benchmark for future research on Wi-Fi sensing. To this end, we perform an extensive CSI data collection campaign involving 3 individuals, 3 environments, and 12 activities, using Wi-Fi 6 signals. An anonymized ground truth obtained through video recording accompanies our 80-GB dataset, which contains almost two hours of CSI data from three collectors. We leverage our dataset to dissect the performance of a state-of-the-art sensing ",
+    "pdf_path": "data/raw_papers/author2023exposing.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://arxiv.org/abs/2302.00992",
+      "theme": "Evaluation",
+      "priority": "Core",
+      "what_to_build_on": "Test bandwidth, MIMO and environment assumptions",
+      "limitation_or_check": "HAR investigation; small participant cohort"
+    },
+    "category": "Edge Systems & Benchmark Rigor"
+  },
+  "matrix::mitigating data leak": {
+    "id": "matrix::mitigating data leak",
+    "doi": "",
+    "arxiv_id": "",
+    "title": "Mitigating Data Leakage in a WiFi CSI Benchmark for Human Activity Recognition",
+    "authors": [
+      "author"
+    ],
+    "year": 2024,
+    "venue": "Sensors",
+    "bibtex_key": "author2024mitigating",
+    "abstract": "Theme: Evaluation. Focus: Subject-aware split audit. Limitation: Subject disjointness applies differently to identity enrollment and HAR",
+    "pdf_path": null,
+    "screening_status": "candidate",
+    "screening_reason": "Ingested from prioritized matrix (Core)",
+    "metadata": {
+      "source_url": "https://www.mdpi.com/1424-8220/24/24/8201",
+      "theme": "Evaluation",
+      "priority": "Core",
+      "what_to_build_on": "Subject-aware split audit",
+      "limitation_or_check": "Subject disjointness applies differently to identity enrollment and HAR"
+    }
+  },
+  "arxiv:2204.04138": {
+    "id": "arxiv:2204.04138",
+    "doi": "",
+    "arxiv_id": "arxiv:2204.04138",
+    "title": "EfficientFi: Toward Large-Scale Lightweight WiFi Sensing via CSI Compression",
+    "authors": [
+      "author"
+    ],
+    "year": 2022,
+    "venue": "IEEE Internet of Things Journal",
+    "bibtex_key": "author2022efficientfi",
+    "abstract": "WiFi technology has been applied to various places due to the increasing requirement of high-speed Internet access. Recently, besides network services, WiFi sensing is appealing in smart homes since it is device-free, cost-effective and privacy- preserving. Though numerous WiFi sensing methods have been developed, most of them only consider single smart home scenario. Without the connection of powerful cloud server and massive users, large-scale WiFi sensing is still difﬁcult. In this paper, we ﬁrstly analyze and summarize these obstacles, and propose an efﬁcient large-scale WiFi sensing framework, namely EfﬁcientFi. The EfﬁcientFi works with edge computing at WiFi APs and cloud computing at center servers. It consists of a novel deep neural network that can compress ﬁne-grained WiFi Chan- nel State Information (CSI) at edge, restore CSI at cloud, and perform sensing tasks simultaneously. A quantized auto-encoder and a joint classiﬁer are designed to achieve these goals in an end-to-end fashion. To the best of our knowledge, the EfﬁcientFi is the ﬁrst IoT-cloud-enabled WiFi sensing framework that signiﬁcantly reduces communication overhead while realizing sensing tasks accurately. ",
+    "pdf_path": "data/raw_papers/35_Yang_et_al_EfficientFi_IoT_J_2022_arXiv_2204_04138.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Edge core)",
+    "metadata": {
+      "source_url": "https://arxiv.org/abs/2204.04138",
+      "theme": "Edge",
+      "priority": "Edge core",
+      "what_to_build_on": "Quantized encoder and communication-cost baseline",
+      "limitation_or_check": "Edge-cloud compression is not entirely local edge inference"
+    },
+    "category": "Vital Signs & Respiration"
+  },
+  "arxiv:2602.11200": {
+    "id": "arxiv:2602.11200",
+    "doi": "",
+    "arxiv_id": "arxiv:2602.11200",
+    "title": "AM-FM: A Foundation Model for Ambient Intelligence Through WiFi",
+    "authors": [
+      "author"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "bibtex_key": "author2026amfm",
+    "abstract": "Ambient intelligence, continuously understanding human presence, activity, and physiology in phys- ical spaces, is fundamental to smart environments, health monitoring, and human-computer interac- tion. WiFi infrastructure provides a ubiquitous, always-on, privacy-preserving substrate for this capability across billions of IoT devices. Yet this potential remains largely untapped, as wireless sensing has typically relied on task-specific mod- els that require substantial labeled data and limit practical deployment. We present AM-FM, the first foundation model for ambient intelligence and sensing through WiFi. AM-FM is pre-trained on 9.2 million unlabeled Channel State Infor- mation (CSI) samples collected over 439 days from 20 commercial device types deployed world- wide, learning general-purpose representations via contrastive learning, masked reconstruction, and physics-informed objectives tailored to wire- less signals. Evaluated on public benchmarks spanning nine downstream tasks, AM-FM shows strong cross-task performance with improved data efficiency, demonstrating that foundation models can enable scalable ambient intelligence using existing wireless infrastructure.",
+    "pdf_path": "data/raw_papers/author2026amfm.pdf",
+    "screening_status": "approved",
+    "screening_reason": "Ingested from prioritized matrix (Novelty check)",
+    "metadata": {
+      "source_url": "https://arxiv.org/html/2602.11200v1",
+      "theme": "Foundation model",
+      "priority": "Novelty check",
+      "what_to_build_on": "Contrastive, masked reconstruction, ACF prediction; shared backbone",
+      "limitation_or_check": "Pretraining data and weights availability must be verified; not zero-shot merely because pretrained"
+    },
+    "category": "Domain Generalization & Transfer"
+  },
+  "local:01_Ma_et_al_2019_CSI_Survey_ACM_CSUR": {
+    "id": "local:01_Ma_et_al_2019_CSI_Survey_ACM_CSUR",
+    "title": "WiFi Sensing with Channel State Information: A Survey",
+    "authors": [
+      "Ma"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "ma2019wifi",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2019 Association for Computing Machinery. 0360-0300/2019/1-ART1 $15.00 https://doi.org/10.1145/nnnnnnn.nnnnnnn ACM Comput. Surv., Vol. 1, No. 1, Article 1. Publication date: January 2019. 1:2 Y. Ma et al. A time series of CSI measurements captures how wireless signals travel through surrounding objects and humans in time, frequency, and spatial domains, so it can be used for different wireless sensing applications. For example, CSI amplitude variations in the time domain have different patterns for different humans, activities, gestures, etc., which can be used for human presence detection [3, 24, 67, 73, 75, 83, 112, 114, 121, 148, 149, 152], fall detection [32, 68, 92, 135, 137], motion detection [23, 27, 51, 55, 126], activity recognition [6, 14, 16, 18–20, 22, 28, 63, 94, 98, 99, 102, 103, 107, 117, 120, 132], gesture recognition [2–5, 33, 48–50, 62, 64, 72, 77, 81, 85, 89, 127, 134, 140, 147], and human identification/authentication [10, 11, 34, 53, 54, 82, 96, 97, 118, 12",
+    "pdf_path": "data/raw_papers/01_Ma_et_al_2019_CSI_Survey_ACM_CSUR.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:02_Liu_Wireless_Sensing_Survey_COMST_2019": {
+    "id": "local:02_Liu_Wireless_Sensing_Survey_COMST_2019",
+    "title": "Wireless Sensing for Human Activity: A Survey",
+    "authors": [
+      "Liu"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "liu2019wireless",
+    "abstract": "With the advancement of wireless technologies and sensing methodologies, many studies have shown the success of re-using wireless signals (e.g., WiFi) to sense human activities and thereby realize a set of emerging applications, ranging from intru- sion detection, daily activity recognition, gesture recognition to vital signs monitoring and user identiﬁcation involving even ﬁner- grained motion sensing. These applications arguably can brace various domains for smart home and ofﬁce environments, includ- ing safety protection, well-being monitoring/management, smart healthcare and smart-appliance interaction. The movements of the human body impact the wireless signal propagation (e.g., reﬂection, diffraction and scattering), which provide great oppor- tunities to capture human motions by analyzing the received wireless signals. Researchers take the advantage of the exist- ing wireless links among mobile/smart devices (e.g., laptops, smartphones, smart thermostats, smart refrigerators and virtual assistance systems) by either extracting the ready-to-use signal measurements or adopting frequency modulated signals to detect the frequency shift. Due to the low-cost and non-intrusive sens",
+    "pdf_path": "data/raw_papers/02_Liu_Wireless_Sensing_Survey_COMST_2019.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:03_Chen_CrossDomain_Survey_CSUR_2023": {
+    "id": "local:03_Chen_CrossDomain_Survey_CSUR_2023",
+    "title": "Cross-Domain WiFi Sensing with Channel State",
+    "authors": [
+      "Chen"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "chen2023cross",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2023 Association for Computing Machinery. 0360-0300/2023/02-ART231 $15.00 https://doi.org/10.1145/3570325 ACM Computing Surveys, Vol. 55, No. 11, Article 231. Publication date: February 2023. 231:2 C. Chen et al. Multiple-Output (MIMO) and Orthogonal Frequency-Division Multiplexing (OFDM). The employment of MIMO and OFDM techniques enables commercial-off-the-shelf (COTS) WiFi devices to obtain Channel State Information (CSI) from each transmit antenna to each receive antenna at each carrier frequency along multiple paths. The key idea behind WiFi sensing is that the pattern of CSI can be affected when a user (i.e., humans or other objects) moves in the wireless environment. The patterns of change exhibit distinct characteristics due to different movements, which can be used for a set of emerging detection, recognition, and estimation applications [46, 51, 95]. Recent progress in detection with WiFi has explored the detection of human events, such as falls [82, 92] and motion [1",
+    "pdf_path": "data/raw_papers/03_Chen_CrossDomain_Survey_CSUR_2023.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:04_Miao_WiFi_Sensing_Brief_Survey_2025": {
+    "id": "local:04_Miao_WiFi_Sensing_Brief_Survey_2025",
+    "title": "Wi-Fi Sensing Techniques for Human Activity Recognition:",
+    "authors": [
+      "Miao"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "miao2025wi",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2025 Copyright held by the owner/author(s). Publication rights licensed to ACM. ACM 0360-0300/2025/01-ART107 https://doi.org/10.1145/3705893 ACM Comput. Surv., Vol. 57, No. 5, Article 107. Publication date: January 2025. 107:2 F. Miao et al. Additional Key Words and Phrases: Non-contact sensing, Wi-Fi signals, intelligent sensing, human activity recognition, deep learning ACM Reference Format: Fucheng Miao, Youxiang Huang, Zhiyi Lu, Tomoaki Ohtsuki, Guan Gui, and Hikmet Sari. 2025. Wi-Fi Sensing Techniques for Human Activity Recognition: Brief Survey, Potential Challenges, and Research Directions. ACM Comput. Surv. 57, 5, Article 107 (January 2025), 30 pages. https://doi.org/10.1145/3705893",
+    "pdf_path": "data/raw_papers/04_Miao_WiFi_Sensing_Brief_Survey_2025.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:06_SSL_for_WiFi_Sensing_Tutorial_IEEE_COMST_2025": {
+    "id": "local:06_SSL_for_WiFi_Sensing_Tutorial_IEEE_COMST_2025",
+    "title": "A Tutorial-cum-Survey on Self-Supervised Learning",
+    "authors": [
+      "SSL"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "ssl2025tutorial",
+    "abstract": "Wi-Fi technology has evolved from simple com- munication routers to sensing devices. Wi-Fi sensing leverages conventional Wi-Fi transmissions to extract and analyze channel state information (CSI) for applications like proximity detection, occupancy detection, activity recognition, and health monitor- ing. By leveraging existing infrastructure, Wi-Fi sensing offers a privacy-preserving, non-intrusive, and cost-effective solution which, unlike cameras, is not sensitive to lighting conditions. Be- ginning with a comprehensive review of the Wi-Fi standardization activities, this tutorial-cum-survey first introduces fundamental concepts related to Wi-Fi CSI, outlines the CSI measurement methods, and examines the impact of mobile objects on CSI. The mechanics of a simplified testbed for CSI extraction are also described. Then, we present a qualitative comparison of the existing Wi-Fi sensing datasets, their specifications, and pin-point their shortcomings. Next, a variety of preprocessing techniques are discussed that are beneficial for feature extraction and explainability of machine learning (ML) algorithms. We then provide a qualitative review of recent ML approaches in the domain of",
+    "pdf_path": "data/raw_papers/06_SSL_for_WiFi_Sensing_Tutorial_IEEE_COMST_2025.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:07_Sai_ML_CSI_Review_IoTJ_2026": {
+    "id": "local:07_Sai_ML_CSI_Review_IoTJ_2026",
+    "title": "Machine Learning Techniques for Wi-Fi CSI-Based",
+    "authors": [
+      "Sai"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "sai2026machine",
+    "abstract": "Wi-Fi channel state information (CSI) has become a widely studied modality for device-free sensing as it captures ﬁne- grained wireless channel variations that can be mapped to human motion and presence while avoiding the explicit visual disclosure typical of vision-based systems. CSI-based pipelines have been explored for human activity and gesture recognition, fall detec- tion, gait analysis, pose-related inference, and indoor localization. Despite strong results in controlled settings, practical deploy- ment remains diﬃcult due to measurement noise, sensitivity to environmental dynamics, multiuser interference, and system- level constraints in data acquisition and real-time processing. This article surveys machine learning (ML) methods for Wi-Fi CSI sensing and analyzes more than 65 representative models, connecting algorithmic design choices with implementable end- to-end system design. We introduce a hierarchical taxonomy that organizes the literature into classical ML approaches, deep learning (DL) architectures, and hybrid strategies. Beyond mod- eling, we describe the full sensing pipeline—from hardware and network interface card (NIC) selection to software tools, antenna c",
+    "pdf_path": "data/raw_papers/07_Sai_ML_CSI_Review_IoTJ_2026.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:08_Halperin_CSI_Tool_CCR_2011": {
+    "id": "local:08_Halperin_CSI_Tool_CCR_2011",
+    "title": "Tool Release: Gathering 802.11n Traces with",
+    "authors": [
+      "Halperin"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "halperin2011tool",
+    "abstract": "We are pleased to announce the release of a tool that records de- tailed measurements of the wireless channel along with received 802.11 packet traces. It runs on a commodity 802.11n NIC, and records Channel State Information (CSI) based on the 802.11 stan- dard. Unlike Receive Signal Strength Indicator (RSSI) values, which merely capture the total power received at the listener, the CSI con- tains information about the channel between sender and receiver at the level of individual data subcarriers, for each pair of transmit and receive antennas. Our toolkit uses the Intel WiFi Link 5300 wireless NIC with 3 antennas. It works on up-to-date Linux operating systems: in our testbed we use Ubuntu 10.04 LTS with the 2.6.36 kernel. The mea- surement setup comprises our customized versions of Intel’s close- source ﬁrmware and open-source iwlwifi wireless driver, user- space tools to enable these measurements, access point function- ality for controlling both ends of the link, and Matlab (or Octave) scripts for data analysis. We are releasing the binary of the modiﬁed ﬁrmware, and the source code to all the other components. 1. MOTIVATION AND USES It is well-known that the performance of w",
+    "pdf_path": "data/raw_papers/08_Halperin_CSI_Tool_CCR_2011.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:09_Nexmon_Demo_WiSec_2017": {
+    "id": "local:09_Nexmon_Demo_WiSec_2017",
+    "title": "DEMO: Nexmon in Action: Advanced Applications Powered by",
+    "authors": [
+      "Nexmon"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "nexmon2017demo",
+    "abstract": "Smartphones and Internet of Tings (IoT) devices are widely avail- able and oﬀer interfaces for wireless communication. Tis makes them perfect candidates for large-scale wireless testbeds. To re- duce energy consumption, those devices contain FullMAC Wi-Fi chips. Tey run proprietary ﬁrmwares that abstract from low-layer mechanisms on the data link (MAC) and physical layer (PHY). Tis hinders researchers to inﬂuence their operation and evaluate new communication schemes on oﬀ-the-shelf devices. Using our Nex- mon ﬁrmware patching framework, we gain access to chip internals to extend their functionalities by writing patches comfortably in C. In this work, we use a Raspberry Pi 3 to oﬀer workshop atendees a hands-on experience on how to get starting with Nexmon by extending the ﬁrmware of the Pi’s Wi-Fi chip. Additionally, we use Android smartphones to present our wireless penetration testing app based on monitor mode and frame injection patches, as well as our reactive Wi-Fi jamming app based on patches to the Wi-Fi chip’s real-time processor. Te demonstrations show how easily Nexmon enables us to implement even complex applications in a Wi-Fi chip resulting in very low processing late",
+    "pdf_path": "data/raw_papers/09_Nexmon_Demo_WiSec_2017.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:11_ESPARGOS_Phase_Coherent_CSI_2024_arXiv_2408_16377": {
+    "id": "local:11_ESPARGOS_Phase_Coherent_CSI_2024_arXiv_2408_16377",
+    "title": "ESPARGOS: Phase-Coherent WiFi CSI Datasets for",
+    "authors": [
+      "ESPARGOS"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "espargos2024espargos",
+    "abstract": "The use of WiFi signals to sense the physical envi- ronment is gaining popularity, with some common applications being motion detection and transmitter localization. Standard- compliant WiFi provides a cost effective, easy and backward- compatible approach to Joint Communication and Sensing and enables a seamless transfer of results from experiments to practical applications. However, most WiFi sensing research is conducted on channel state information (CSI) data from current- generation devices, which are usually not meant for sensing applications and thus lack sufficient spatial diversity or phase synchronization. With ESPARGOS, we previously developed a phase-coherent, real-time capable many-antenna WiFi channel sounder specifically for wireless sensing. We describe how we use ESPARGOS to capture large CSI datasets that we make publicly available. The datasets are extensively documented and labeled, for example with information from reference positioning systems, enabling data-driven and machine learning-based research.",
+    "pdf_path": "data/raw_papers/11_ESPARGOS_Phase_Coherent_CSI_2024_arXiv_2408_16377.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:12_Adib_Katabi_See_Through_Walls_SIGCOMM_2013": {
+    "id": "local:12_Adib_Katabi_See_Through_Walls_SIGCOMM_2013",
+    "title": "See Through Walls with Wi-Fi!",
+    "authors": [
+      "Adib"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "adib2013see",
+    "abstract": "Wi-Fi signals are typically information carriers between a trans- mitter and a receiver. In this paper, we show that Wi-Fi can also extend our senses, enabling us to see moving objects through walls and behind closed doors. In particular, we can use such signals to identify the number of people in a closed room and their relative locations. We can also identify simple gestures made behind a wall, and combine a sequence of gestures to communicate messages to a wireless receiver without carrying any transmitting device. The paper introduces two main innovations. First, it shows how one can use MIMO interference nulling to eliminate reﬂections off static objects and focus the receiver on a moving target. Second, it shows how one can track a human by treating the motion of a human body as an antenna array and tracking the resulting RF beam. We demon- strate the validity of our design by building it into USRP software radios and testing it in ofﬁce buildings. Categories and Subject Descriptors C.2.2 [Computer Systems Organization]: Computer-Communications Networks. H.5.2 [Information Interfaces and Presentation]: User Inter- faces - Input devices and strategies.",
+    "pdf_path": "data/raw_papers/12_Adib_Katabi_See_Through_Walls_SIGCOMM_2013.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:13_Wang_et_al_E_eyes_MobiCom_2014": {
+    "id": "local:13_Wang_et_al_E_eyes_MobiCom_2014",
+    "title": "E-eyes: Device-free Location-oriented Activity",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "wang2014e",
+    "abstract": "Activity monitoring in home environments has become increas- ingly important and has the potential to support a broad array of ap- plications including elder care, well-being management, and latchkey child safety. Traditional approaches involve wearable sensors and specialized hardware installations. This paper presents device-free location-oriented activity identiﬁcation at home through the use of existing WiFi access points and WiFi devices (e.g., desktops, ther- mostats, refrigerators, smartTVs, laptops). Our low-cost system takes advantage of the ever more complex web of WiFi links be- tween such devices and the increasingly ﬁne-grained channel state information that can be extracted from such links. It examines channel features and can uniquely identify both in-place activi- ties and walking movements across a home by comparing them against signal proﬁles. Signal proﬁles construction can be semi- supervised and the proﬁles can be adaptively updated to accom- modate the movement of the mobile devices and day-to-day signal calibration. Our experimental evaluation in two apartments of dif- ferent size demonstrates that our approach can achieve over 96% average true positive rate ",
+    "pdf_path": "data/raw_papers/13_Wang_et_al_E_eyes_MobiCom_2014.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:14_Wang_CARM_UbiComp_2015": {
+    "id": "local:14_Wang_CARM_UbiComp_2015",
+    "title": "Understanding and Modeling of WiFi Signal Based",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "wang2015understanding",
+    "abstract": "Some pioneer WiFi signal based human activity recognition sys- tems have been proposed. Their key limitation lies in the lack of a model that can quantitatively correlate CSI dynamics and human activities. In this paper, we propose CARM, a CSI based human Activity Recognition and Monitoring system. CARM has two the- oretical underpinnings: a CSI-speed model, which quantiﬁes the correlation between CSI value dynamics and human movement speeds, and a CSI-activity model, which quantiﬁes the correlation between the movement speeds of different human body parts and a speciﬁc human activity. By these two models, we quantitatively build the correlation between CSI value dynamics and a speciﬁc human activity. CARM uses this correlation as the proﬁling mech- anism and recognizes a given activity by matching it to the best-ﬁt proﬁle. We implemented CARM using commercial WiFi devices and evaluated it in several different environments. Our results show that CARM achieves an average accuracy of greater than 96%. Categories and Subject Descriptors C2.1 [Network Architecture and Design]: Wireless communica- tion General Terms Experimentation,Measurement",
+    "pdf_path": "data/raw_papers/14_Wang_CARM_UbiComp_2015.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:15_Kotaru_SpotFi_SIGCOMM_2015": {
+    "id": "local:15_Kotaru_SpotFi_SIGCOMM_2015",
+    "title": "SpotFi: Decimeter Level Localization Using WiFi",
+    "authors": [
+      "Kotaru"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "kotaru2015spotfi",
+    "abstract": "This paper presents the design and implementation of SpotFi, an accurate indoor localization system that can be deployed on commodity WiFi infrastructure. SpotFi only uses in- formation that is already exposed by WiFi chips and does not require any hardware or ﬁrmware changes, yet achieves the same accuracy as state-of-the-art localization systems. SpotFi makes two key technical contributions. First, SpotFi incorporates super-resolution algorithms that can accurately compute the angle of arrival (AoA) of multipath components even when the access point (AP) has only three antennas. Second, it incorporates novel ﬁltering and estimation tech- niques to identify AoA of direct path between the localiza- tion target and AP by assigning values for each path depend- ing on how likely the particular path is the direct path. Our experiments in a multipath rich indoor environment show that SpotFi achieves a median accuracy of 40 cm and is ro- bust to indoor hindrances such as obstacles and multipath. CCS Concepts •Information systems →Location based services; Sensor networks; Global positioning systems; •Networks →Loca- tion based services;",
+    "pdf_path": "data/raw_papers/15_Kotaru_SpotFi_SIGCOMM_2015.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:16_Xiong_Jamieson_ArrayTrack_NSDI_2013": {
+    "id": "local:16_Xiong_Jamieson_ArrayTrack_NSDI_2013",
+    "title": "USENIX Association",
+    "authors": [
+      "Xiong"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "xiong2013usenix",
+    "abstract": "With myriad augmented reality, social networking, and retail shopping applications all on the horizon for the mobile handheld, a fast and accurate location technology will become key to a rich user experience. When roam- ing outdoors, users can usually count on a clear GPS sig- nal for accurate location, but indoors, GPS often fades, and so up until recently, mobiles have had to rely mainly on rather coarse-grained signal strength readings. What has changed this status quo is the recent trend of dramat- ically increasing numbers of antennas at the indoor ac- cess point, mainly to bolster capacity and coverage with multiple-input, multiple-output (MIMO) techniques. We thus observe an opportunity to revisit the important prob- lem of localization with a fresh perspective. This paper presents the design and experimental evaluation of Ar- rayTrack, an indoor location system that uses MIMO- based techniques to track wireless clients at a very ﬁne granularity in real time, as they roam about a building. With a combination of FPGA and general purpose com- puting, we have built a prototype of the ArrayTrack sys- tem. Our results show that the techniques we propose can pinpoint 41 clients s",
+    "pdf_path": "data/raw_papers/16_Xiong_Jamieson_ArrayTrack_NSDI_2013.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:17_Gjengset_Phaser_MobiCom_2014": {
+    "id": "local:17_Gjengset_Phaser_MobiCom_2014",
+    "title": "Phaser: Enabling Phased Array Signal Processing on",
+    "authors": [
+      "Gjengset"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "gjengset2014phaser",
+    "abstract": "Signal processing on antenna arrays has received much recent atten- tion in the mobile and wireless networking research communities, with array signal processing approaches addressing the problems of human movement detection, indoor mobile device localization, and wireless network security. However, there are two important challenges inherent in the design of these systems that must be overcome if they are to be of practical use on commodity hardware. First, phase differences between the radio oscillators behind each antenna can make readings unusable, and so must be corrected in order for most techniques to yield high-ﬁdelity results. Second, while the number of antennas on commodity access points is usu- ally limited, most array processing increases in ﬁdelity with more antennas. These issues work in synergistic opposition to array pro- cessing: without phase offset correction, no phase-difference array processing is possible, and with fewer antennas, automatic correc- tion of these phase offsets becomes even more challenging. We present Phaser, a system that solves these intertwined problems to make phased array signal processing truly practical on the many WiFi access points de",
+    "pdf_path": "data/raw_papers/17_Gjengset_Phaser_MobiCom_2014.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:18_Wang_RTFall_TMC_2017": {
+    "id": "local:18_Wang_RTFall_TMC_2017",
+    "title": "RT-Fall: A Real-Time and Contactless Fall",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "wang2017rt",
+    "abstract": "This paper presents the design and implementation of RT-Fall, a real-time, contactless, low-cost yet accurate indoor fall detection system using the commodity WiFi devices. RT-Fall exploits the phase and amplitude of the ﬁne-grained Channel State Information (CSI) accessible in commodity WiFi devices, and for the ﬁrst time fulﬁlls the goal of segmenting and detecting the falls automatically in real-time, which allows users to perform daily activities naturally and continuously without wearing any devices on the body. This work makes two key technical contributions. First, we ﬁnd that the CSI phase difference over two antennas is a more sensitive base signal than amplitude for activity recognition, which can enable very reliable segmentation of fall and fall-like activities. Second, we discover the sharp power proﬁle decline pattern of the fall in the time-frequency domain and further exploit the insight for new feature extraction and accurate fall segmentation/detection. Experimental results in four indoor scenarios demonstrate that RT-fall consistently outperforms the state-of-the-art approach WiFall with 14 percent higher sensitivity and 10 percent higher speciﬁcity on average.",
+    "pdf_path": "data/raw_papers/18_Wang_RTFall_TMC_2017.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:20_Vasisht_et_al_Chronos_NSDI_2016": {
+    "id": "local:20_Vasisht_et_al_Chronos_NSDI_2016",
+    "title": "This paper is included in the Proceedings of the",
+    "authors": [
+      "Vasisht"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "vasisht2016this",
+    "abstract": "Existing gesture-recognition systems consume signiﬁ- cant power and computational resources that limit how they may be used in low-end devices. We introduce AllSee, the ﬁrst gesture-recognition system that can op- erate on a range of computing devices including those with no batteries. AllSee consumes three to four or- ders of magnitude lower power than state-of-the-art sys- tems and can enable always-on gesture recognition for smartphones and tablets. It extracts gesture information from existing wireless signals (e.g., TV transmissions), but does not incur the power and computational over- heads of prior wireless approaches. We build AllSee prototypes that can recognize gestures on RFID tags and power-harvesting sensors. We also integrate our hard- ware with an off-the-shelf Nexus S phone and demon- strate gesture recognition in through-the-pocket scenar- ios. Our results show that AllSee achieves classiﬁcation accuracies as high as 97% over a set of eight gestures.",
+    "pdf_path": "data/raw_papers/Kellogg_AllSee_SIGCOMM2014.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:21_Qian_et_al_Widar_MobiCom_2017": {
+    "id": "local:21_Qian_et_al_Widar_MobiCom_2017",
+    "title": "Widar: Decimeter-Level Passive Tracking via Velocity",
+    "authors": [
+      "Qian"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "qian2017widar",
+    "abstract": "Various pioneering approaches have been proposed for Wi-Fi-based sensing, which usually employ learning-based techniques to seek appropriate statistical features, yet do not support precise tracking without prior training. Thus to advance passive sensing, the ability to track fine-grained human mobility information acts as a key enabler. In this paper, we propose Widar, a Wi-Fi-based tracking system that simultaneously estimates a human’s moving velocity (both speed and direction) and location at a decimeter level. Instead of applying statistical learning techniques, Widar builds a theoreti- cal model that geometrically quantifies the relationships between CSI dynamics and the user’s location and velocity. On this basis, we propose novel techniques to identify frequency components related to human motion from noisy CSI readings and then derive a user’s location in addition to velocity. We implement Widar on commercial Wi-Fi devices and validate its performance in real en- vironments. Our results show that Widar achieves decimeter-level accuracy, with a median location error of 25 cm given initial posi- tions and 38 cm without them and a median relative velocity error of 13%. CCS CO",
+    "pdf_path": "data/raw_papers/21_Qian_et_al_Widar_MobiCom_2017.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:22_Qian_et_al_Widar2_0_MobiSys_2018": {
+    "id": "local:22_Qian_et_al_Widar2_0_MobiSys_2018",
+    "title": "Widar2.0: Passive Human Tracking with a Single Wi-Fi Link",
+    "authors": [
+      "Qian"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "qian2018widar",
+    "abstract": "This paper presents Widar2.0, the first WiFi-based system that enables passive human localization and tracking using a single link on commodity off-the-shelf devices. Previous works based on either specialized or commercial hardware all require multiple links, preventing their wide adoption in scenarios like homes where typically only one single AP is installed. The key insight underlying Widar2.0 to circumvent the use of multiple links is to leverage multi-dimensional signal parameters from one single link. To this end, we build a unified model accounting for Angle-of-Arrival, Time-of-Flight, and Doppler shifts together and devise an efficient algorithm for their joint estimation. We then design a pipeline to translate the erroneous raw parameters into precise locations, which first finds parameters corresponding to the reflections of interests, then refines range estimates, and ultimately outputs target locations. Our implementation and evaluation on commodity WiFi devices demonstrate that Widar2.0 achieves better or comparable performance to state-of-the-art localization systems, which either use specialized hardwares or require 2 to 40 Wi-Fi links. CCS CONCEPTS • Human-centered",
+    "pdf_path": "data/raw_papers/22_Qian_et_al_Widar2_0_MobiSys_2018.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:24_Ma_et_al_SignFi_SenSys_2018": {
+    "id": "local:24_Ma_et_al_SignFi_SenSys_2018",
+    "title": "SignFi: Sign Language Recognition Using WiFi",
+    "authors": [
+      "Ma"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "ma2018signfi",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2018 Association for Computing Machinery. 2474-9567/2018/3-ART23 $15.00 https://doi.org/10.1145/3191755 Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, Vol. 2, No. 1, Article 23. Publication date: March 2018. 23:2 • Y. Ma et al. There is a huge barrier between the Deaf community and people that do not understand or know little about sign language. A sign language recognition system would help break this barrier. There are some sign language recognition systems using cameras [34] or Kinect [13, 28, 36, 47], but they are subject to lighting conditions. Some systems use Leap Motion [6–8, 20, 23, 24, 30, 36, 47], but they can recognize only finger gestures and are very sensitive to the distance and displacement of the Leap Motion sensor and the human. Some systems use gloves and motion sensors, like SignAloud [26], but they are intrusive and require sensors to be attached on fingers. Many papers have shown that Channel State Information (CSI) of",
+    "pdf_path": "data/raw_papers/24_Ma_et_al_SignFi_SenSys_2018.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:26_Wang_et_al_PhaseBeat_BHI_2016": {
+    "id": "local:26_Wang_et_al_PhaseBeat_BHI_2016",
+    "title": "PhaseBeat: Exploiting CSI Phase Data for Vital Sign Monitoring with Commodity",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "wang2016phasebeat",
+    "abstract": "Vital signs, such as respiration and heartbeat, are useful to health monitoring since such signals provide important clues of medical conditions. Effective solutions are needed to provide contact-free, easy deployment, low-cost, and long-term vital sign monitoring. In this paper, we present PhaseBeat to exploit channel state information (CSI) phase difference data to monitor breathing and heartbeat with commodity WiFi devices. We provide a rigorous analysis of the CSI phase difference data with respect to its stability and periodicity. Based on the analysis, we design and implement the PhaseBeat system with off-the-shelf WiFi devices, and conduct an extensive experimental study to validate its performance. Our experimental results demonstrate the superior perfor- mance of PhaseBeat over existing approaches in various indoor environments.",
+    "pdf_path": "data/raw_papers/26_Wang_et_al_PhaseBeat_BHI_2016.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:27_Wang_TensorBeat_ToIT_2017": {
+    "id": "local:27_Wang_TensorBeat_ToIT_2017",
+    "title": "TensorBeat: Tensor Decomposition for Monitoring",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "wang2017tensorbeat",
+    "abstract": "ing with credit is permitted. To copy otherwise, to republish, to post on servers, to redistribute to lists, or to use any component of this work in other works requires prior specific permission and/or a fee. Permissions may be requested from Publications Dept., ACM, Inc., 2 Penn Plaza, Suite 701, New York, NY 10121-0701 USA, fax + 1 (212) 869-0481, or permissions@acm.org. © 2017 ACM 2157-6904/2017/09-ART8 $15.00 https://doi.org/10.1145/3078855 ACM Transactions on Intelligent Systems and Technology, Vol. 9, No. 1, Article 8. Publication date: September 2017. 8:2 X. Wang et al. infant death syndrome (SIDS) for sleeping infants (Hunt and Hauck 2006). Traditional approaches for monitoring vital signs require patients to wear special devices, such as a capnometer (Mogue and Rantala 1988) to estimate the breathing rate or a pulse oximeter (Shariati and Zahedi 2005) on the finger to track heartbeats. Smartphones are now used to estimate the breathing rate by employ- ing a built-in gyroscope, accelerometer (Aly and Youssef 2016), and microphone (Ren et al. 2015), and for physical activity recognition using an accelerometer (Tao et al. 2016). This requires the pa- tient to place a smartph",
+    "pdf_path": "data/raw_papers/27_Wang_TensorBeat_ToIT_2017.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:30_WiROS_Toolbox_2023_arXiv_2305_13418": {
+    "id": "local:30_WiROS_Toolbox_2023_arXiv_2305_13418",
+    "title": "WiROS: WiFi sensing toolbox for robotics",
+    "authors": [
+      "WiROS"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "wiros2023wiros",
+    "abstract": "Many recent works have explored using WiFi- based sensing to improve SLAM [1], robot manipulation [2] or exploration [3]. Moreover, widespread availability makes WiFi the most advantageous RF signal to leverage. But WiFi sensors lack an accurate, tractable, and versatile toolbox, which hinders their widespread adoption with robot’s sensor stacks. We develop WiROS to address this immediate need, furnishing many WiFi-related measurements as easy-to-consume ROS topics. Specifically, WiROS is a plug-and-play WiFi sensing toolbox providing access to coarse-grained WiFi signal strength (RSSI), fine-grained WiFi channel state information (CSI), and other MAC-layer information (device address, packet id’s or frequency-channel information). Additionally, WiROS open-sources state-of-art algorithms to calibrate and process WiFi measurements to furnish accurate bearing information for received WiFi signals. The open-sourced repository is: WiROS:https://github.com/ucsdwcsng/WiROS.",
+    "pdf_path": "data/raw_papers/30_WiROS_Toolbox_2023_arXiv_2305_13418.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:31_Yousefi_Behavior_Recognition_ComMag_2017": {
+    "id": "local:31_Yousefi_Behavior_Recognition_ComMag_2017",
+    "title": "In this article, we present a survey of recent",
+    "authors": [
+      "Yousefi"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "yousefi2017in",
+    "abstract": "In this article, we present a survey of recent advances in passive human behavior recognition in indoor areas using the channel state information (CSI) of commercial WiFi systems. The movement of the human body parts cause changes in the wireless signal reflections, which result in variations in the CSI. By analyzing the data streams of CSIs for different activities and comparing them against stored models, human behavior can be recognized. This is done by extracting features from CSI data streams and using machine learning techniques to build models and classifiers. The techniques from the literature that are presented herein have great performance; however, instead of the machine learning techniques employed in these works, we propose to use deep learning techniques such as long-short term memory (LSTM) recurrent neural networking (RNN) and show the improved perfor- mance. We also discuss different challenges such as environment change, frame rate selection, and the multi-user scenario; and finally suggest possible directions for future work. Background on Traditional Activity Recognition Systems Human activity recognition has gained tremen- dous attention in recent years due to ",
+    "pdf_path": "data/raw_papers/31_Yousefi_Behavior_Recognition_ComMag_2017.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:33_Yang_et_al_SenseFi_Patterns_2022_arXiv_2207_07859": {
+    "id": "local:33_Yang_et_al_SenseFi_Patterns_2022_arXiv_2207_07859",
+    "title": "SenseFi: A Library and Benchmark on",
+    "authors": [
+      "Yang"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "yang2022sensefi",
+    "abstract": "WiFi sensing has been evolving rapidly in recent years. Empowered by propagation models and deep learning methods, many challenging applications are realized such as WiFi-based human activity recognition and gesture recognition. However, in contrast to deep learning for visual recognition and natural language processing, no sufﬁciently comprehensive public benchmark exists. In this paper, we review the recent progress on deep learning enabled WiFi sensing, and then propose a bench- mark, SenseFi, to study the effectiveness of various deep learning models for WiFi sensing. These advanced models are compared in terms of distinct sensing tasks, WiFi platforms, recognition accuracy, model size, computational complexity, feature trans- ferability, and adaptability of unsupervised learning. It is also regarded as a tutorial for deep learning based WiFi sensing, starting from CSI hardware platform to sensing algorithms. The extensive experiments provide us with experiences in deep model design, learning strategy skills and training techniques for real- world applications. To the best of our knowledge, this is the ﬁrst benchmark with an open-source library for deep learning in WiFi sensing",
+    "pdf_path": "data/raw_papers/33_Yang_et_al_SenseFi_Patterns_2022_arXiv_2207_07859.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:34_Yang_et_al_AutoFi_IoT_J_2022": {
+    "id": "local:34_Yang_et_al_AutoFi_IoT_J_2022",
+    "title": "AutoFi: Towards Automatic WiFi Human Sensing",
+    "authors": [
+      "Yang"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "yang2022autofi",
+    "abstract": "WiFi sensing technology has shown superiority in smart homes among various sensors for its cost-effective and privacy-preserving merits. It is empowered by Channel State Information (CSI) extracted from WiFi signals and advanced machine learning models to analyze motion patterns in CSI. Many learning-based models have been proposed for kinds of applications, but they severely suffer from environmental dependency. Though domain adaptation methods have been proposed to tackle this issue, it is not practical to collect high- quality, well-segmented and balanced CSI samples in a new environment for adaptation algorithms, but randomly-captured CSI samples can be easily collected. In this paper, we ﬁrstly explore how to learn a robust model from these low-quality CSI samples, and propose AutoFi, an annotation-efﬁcient WiFi sensing model based on a novel geometric self-supervised learning algorithm. The AutoFi fully utilizes unlabeled low-quality CSI samples that are captured randomly, and then transfers the knowledge to speciﬁc tasks deﬁned by users, which is the ﬁrst work to achieve cross-task transfer in WiFi sensing. The AutoFi is implemented on a pair of Atheros WiFi APs for evaluati",
+    "pdf_path": "data/raw_papers/34_Yang_et_al_AutoFi_IoT_J_2022.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:36_WiFlexFormer_2024_arXiv_2411_04224": {
+    "id": "local:36_WiFlexFormer_2024_arXiv_2411_04224",
+    "title": "WiFlexFormer: Efficient WiFi-Based Person-Centric Sensing",
+    "authors": [
+      "WiFlexFormer"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "wiflexformer2024wiflexformer",
+    "abstract": "We propose WiFlexFormer, a highly efficient Transformer- based architecture designed for WiFi Channel State Infor- mation (CSI)-based person-centric sensing. We benchmark WiFlexFormer against state-of-the-art vision and special- ized architectures for processing radio frequency data and demonstrate that it achieves comparable Human Activity Recognition (HAR) performance while offering a signifi- cantly lower parameter count and faster inference times. With an inference time of just 10 ms on an Nvidia Jetson Orin Nano, WiFlexFormer is optimized for real-time infer- ence. Additionally, its low parameter count contributes to improved cross-domain generalization, where it often out- performs larger models. Our comprehensive evaluation shows that WiFlexFormer is a potential solution for effi- cient, scalable WiFi-based sensing applications. The Py- Torch implementation of WiFlexFormer is publicly avail- able at: https://github.com/StrohmayerJ/WiFlexFormer.",
+    "pdf_path": "data/raw_papers/36_WiFlexFormer_2024_arXiv_2411_04224.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:37_MORIC_Delay_Doppler_2025_arXiv_2506_12997": {
+    "id": "local:37_MORIC_Delay_Doppler_2025_arXiv_2506_12997",
+    "title": "MORIC: CSI Delay-Doppler Decomposition for",
+    "authors": [
+      "MORIC"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "moric2025moric",
+    "abstract": "The newly established IEEE 802.11bf Task Group aims to amend the WLAN standard to support advanced sensing applications such as human activity recognition (HAR). Although studies have demonstrated the potential of sub-7 GHz Wi-Fi Channel State Information (CSI) for HAR, existing methods often degrade substantially under realistic variations across users, envi- ronments, and sensing configurations. This work addresses the poor generalization of Wi-Fi-based HAR by extracting motion-centered representations that reduce dependence on static, environment- specific, and non-activity-related CSI magnitude and phase patterns. CSI signals are transformed into the delay-profile space and decomposed into multiple Doppler velocity projections, which are modeled as observations of a moving point’s velocity from different unknown directions, analogous to virtual cameras observing the same motion with varying degrees of clarity. This yields a richer activity representation than either a single aggregated Doppler estimate or the spurious, environment-dependent CSI patterns used in prior works. Since these projections are unordered and may recur due to random multipath propagation, we introduce MOR",
+    "pdf_path": "data/raw_papers/37_MORIC_Delay_Doppler_2025_arXiv_2506_12997.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:38_Physics_Guided_Lightweight_TCN_2026_arXiv_2606_01834": {
+    "id": "local:38_Physics_Guided_Lightweight_TCN_2026_arXiv_2606_01834",
+    "title": "Physics-Guided Attention in a Lightweight TCN for Efficient WiFi",
+    "authors": [
+      "Physics"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "physics2026physics",
+    "abstract": "Human Action Recognition (HAR) using WiFi Channel State Information (CSI) has gained increasing attention due to its non-contact, low-cost, and privacy-preserving nature. However, existing learning-based approaches largely rely on deep, computationally intensive architectures to implicitly capture mo- tion dynamics from CSI measurements, thereby increasing model complexity and reducing efficiency. Instead we argue that incorporating appropriate inductive biases tailored to the physical characteristics of CSI signals enables more efficient and effective learning. In this work, we propose a compact temporal convolutional network (TCN)-based framework that explicitly incorporates motion-aware inductive biases into feature learning. Specifi- cally, we introduce a Doppler-energy-guided temporal attention mechanism in feature space to emphasize motion-salient time segments, and a variance-driven channel attention module to weight informative subcarriers based on temporal motion statis- tics adaptively. By integrating these domain-specific priors, the proposed model effectively captures motion dynamics without increasing architectural depth. Extensive experiments on multiple bench- mark d",
+    "pdf_path": "data/raw_papers/38_Physics_Guided_Lightweight_TCN_2026_arXiv_2606_01834.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:39_Jiang_EI_MobiCom_2018": {
+    "id": "local:39_Jiang_EI_MobiCom_2018",
+    "title": "Towards Environment Independent Device Free",
+    "authors": [
+      "Jiang"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "jiang2018towards",
+    "abstract": "Driven by a wide range of real-world applications, signifi- cant efforts have recently been made to explore device-free human activity recognition techniques that utilize the in- formation collected by various wireless infrastructures to infer human activities without the need for the monitored subject to carry a dedicated device. Existing device free hu- man activity recognition approaches and systems, though yielding reasonably good performance in certain cases, are faced with a major challenge. The wireless signals arriving at the receiving devices usually carry substantial informa- tion that is specific to the environment where the activities are recorded and the human subject who conducts the ac- tivities. Due to this reason, an activity recognition model that is trained on a specific subject in a specific environ- ment typically does not work well when being applied to predict another subject’s activities that are recorded in a dif- ferent environment. To address this challenge, in this paper, we propose EI, a deep-learning based device free activity recognition framework that can remove the environment and subject specific information contained in the activity data and extra",
+    "pdf_path": "data/raw_papers/39_Jiang_EI_MobiCom_2018.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:40_Zhang_CrossSense_UbiComp_2019": {
+    "id": "local:40_Zhang_CrossSense_UbiComp_2019",
+    "title": "CrossSense: Towards Cross-Site and",
+    "authors": [
+      "Zhang"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "zhang2019crosssense",
+    "abstract": "We present CrossSense, a novel system for scaling up WiFi sensing to new environments and larger problems. To reduce the cost of sensing model training data collection, CrossSense employs machine learning to train, off-line, a roaming model that generates from one set of measurements synthetic train- ing samples for each target environment. To scale up to a larger problem size, CrossSense adopts a mixture-of-experts approach where multiple specialized sensing models, or ex- perts, are used to capture the mapping from diverse WiFi inputs to the desired outputs. The experts are trained offline and at runtime the appropriate expert for a given input is automatically chosen. We evaluate CrossSense by applying it to two representative WiFi sensing applications, gait iden- tification and gesture recognition, in controlled single-link environments. We show that CrossSense boosts the accu- racy of state-of-the-art WiFi sensing techniques from 20% to over 80% and 90% for gait identification and gesture recogni- tion respectively, delivering consistently good performance – particularly when the problem size is significantly greater than that current approaches can effectively handle. CCS CON",
+    "pdf_path": "data/raw_papers/40_Zhang_CrossSense_UbiComp_2019.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:41_Data_Augmentation_Cross_Domain_2024_arXiv_2401_00964": {
+    "id": "local:41_Data_Augmentation_Cross_Domain_2024_arXiv_2401_00964",
+    "title": "Data Augmentation Techniques for Cross-Domain",
+    "authors": [
+      "Data"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "data2024data",
+    "abstract": "The recognition of human activities based on WiFi Channel State Information (CSI) enables contactless and visual privacy-preserving sensing in indoor environments. However, poor model generalization, due to varying environmental con- ditions and sensing hardware, is a well-known problem in this space. To address this issue, in this work, data augmentation techniques commonly used in image-based learning are applied to WiFi CSI to investigate their effects on model generalization performance in cross-scenario and cross-system settings. In particular, we focus on the generalization between line-of-sight (LOS) and non-line-of-sight (NLOS) through-wall scenarios, as well as on the generalization between different antenna systems, which remains under-explored. We collect and make publicly available a dataset of CSI amplitude spectrograms of human activities. Utilizing this data, an ablation study is conducted in which activity recognition models based on the EfficientNetV2 architecture are trained, allowing us to assess the effects of each augmentation on model generalization performance. The gathered results show that specific combinations of simple data augmentation techniques applied",
+    "pdf_path": "data/raw_papers/41_Data_Augmentation_Cross_Domain_2024_arXiv_2401_00964.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:42_Transformer_Hetero_Env_2022_arXiv_2209_11750": {
+    "id": "local:42_Transformer_Hetero_Env_2022_arXiv_2209_11750",
+    "title": "Transformer-based Models to Deal with Heterogeneous",
+    "authors": [
+      "Transformer"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "transformer2022transformer",
+    "abstract": "Human Activity Recognition (HAR) on mobile devices has been demonstrated to be pos- sible using neural models trained on data collected from the device’s inertial measurement units. These models have used Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTMs), Transformers or a combination of these to achieve state-of-the-art results with real-time performance. However, these approaches have not been extensively evaluated in real-world situations where the input data may be different from the training data. This paper highlights the issue of data heterogeneity in machine learning applications and how it can hinder their deployment in pervasive settings. To address this problem, we propose and publicly release the code of two sensor-wise Transformer architectures called HART and MobileHART for Human Activity Recognition Transformer. Our experiments on sev- eral publicly available datasets show that these HART architectures outperform previous architectures with fewer floating point operations and parameters than conventional Trans- formers. The results also show they are more robust to changes in mobile position or device brand and hence better suited for the heterogen",
+    "pdf_path": "data/raw_papers/42_Transformer_Hetero_Env_2022_arXiv_2209_11750.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:43_Widar3_0_Public_Dataset_2021": {
+    "id": "local:43_Widar3_0_Public_Dataset_2021",
+    "title": "Widar3.0: Zero-Effort Cross-Domain Gesture",
+    "authors": [
+      "Widar3"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "widar2024widar",
+    "abstract": "With the development of signal processing technology, the ubiquitous Wi-Fi devices open an unprecedented opportunity to solve the challenging human gesture recognition problem by learning motion representations from wireless signals. Wi-Fi-based gesture recognition systems, although yield good performance on speciﬁc data domains, are still practically difﬁcult to be used without explicit adaptation efforts to new domains. Various pioneering approaches have been proposed to resolve this contradiction but extra training efforts are still necessary for either data collection or model re-training when new data domains appear. To advance cross-domain recognition and achieve fully zero-effort recognition, we propose Widar3.0, a Wi-Fi-based zero-effort cross-domain gesture recognition system. The key insight of Widar3.0 is to derive and extract domain-independent features of human gestures at the lower signal level, which represent unique kinetic characteristics of gestures and are irrespective of domains. On this basis, we develop a one-ﬁts-all general model that requires only one-time training but can adapt to different data domains. Experiments on various domain factors (i.e. environme",
+    "pdf_path": "data/raw_papers/43_Widar3_0_Public_Dataset_2021.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:45_Wang_XRF55_SenSys_2024": {
+    "id": "local:45_Wang_XRF55_SenSys_2024",
+    "title": "XRF55: A Radio Frequency Dataset for Human Indoor Action Analysis",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "wang2024xrf",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2024 Copyright held by the owner/author(s). Publication rights licensed to ACM. 2474-9567/2024/3-ART21 $15.00 https://doi.org/10.1145/3643543 Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 8, No. 1, Article 21. Publication date: March 2024. 21:2 • Fei Wang, Yizhe Lv, Mengdie Zhu, Han Ding, and Jinsong Han",
+    "pdf_path": "data/raw_papers/45_Wang_XRF55_SenSys_2024.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:46_MM_Fi_Multimodal_2023": {
+    "id": "local:46_MM_Fi_Multimodal_2023",
+    "title": "MM-Fi: Multi-Modal Non-Intrusive 4D Human",
+    "authors": [
+      "MM"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "mm2023mm",
+    "abstract": "4D human perception plays an essential role in a myriad of applications, such as home automation and metaverse avatar simulation. However, existing solutions which mainly rely on cameras and wearable devices are either privacy intrusive or inconvenient to use. To address these issues, wireless sensing has emerged as a promising alternative, leveraging LiDAR, mmWave radar, and WiFi signals for device-free human sensing. In this paper, we propose MM-Fi, the first multi-modal non-intrusive 4D human dataset with 27 daily or rehabilitation action categories, to bridge the gap between wireless sensing and high-level human perception tasks. MM-Fi consists of over 320k synchronized frames of five modalities from 40 human subjects. Various annotations are provided to support potential sensing tasks, e.g., human pose estimation and action recognition. Extensive experiments have been conducted to compare the sensing capacity of each or several modalities in terms of multiple tasks. We envision that MM-Fi can contribute to wireless sensing research with respect to action recognition, human pose estimation, multi-modal learning, cross-modal supervision, and interdisciplinary healthcare research",
+    "pdf_path": "data/raw_papers/46_MM_Fi_Multimodal_2023.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:47_CSI_Bench_NeurIPS_2025": {
+    "id": "local:47_CSI_Bench_NeurIPS_2025",
+    "title": "CSI-Bench: A Large-Scale In-the-Wild Dataset for",
+    "authors": [
+      "CSI"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "csi2025csi",
+    "abstract": "WiFi sensing has emerged as a compelling contactless modality for human activity monitoring by capturing fine-grained variations in Channel State Information (CSI). Its ability to operate continuously and non-intrusively while preserving user privacy makes it particularly suitable for health monitoring. However, existing WiFi sensing systems struggle to generalize in real-world settings, largely due to datasets collected in controlled environments with homogeneous hardware and fragmented, session-based recordings that fail to reflect continuous daily activity. We present CSI-Bench, a large-scale, in-the-wild benchmark dataset collected using commercial WiFi edge devices across 26 diverse indoor environments with 35 real users. Spanning over 461 hours of effective data, CSI-Bench captures realistic signal variability under natural conditions. It includes task-specific datasets for fall detection, breathing monitoring, localization, and motion source recognition, as well as a co-labeled multitask dataset with joint annotations for user identity, activity, and proximity. To support the development of robust and generalizable models, CSI-Bench provides standardized evaluation splits an",
+    "pdf_path": "data/raw_papers/47_CSI_Bench_NeurIPS_2025.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:49_Du_802_11bf_Overview_COMST_2024_802_11bf_2025": {
+    "id": "local:49_Du_802_11bf_Overview_COMST_2024_802_11bf_2025",
+    "title": "1",
+    "authors": [
+      "Du"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "du2024paper",
+    "abstract": "With recent advancements, the wireless local area network (WLAN) or wireless fidelity (Wi-Fi) technology has been successfully utilized to realize sensing functionalities such as de- tection, localization, and recognition. However, the WLANs stan- dards are developed mainly for the purpose of communication, and thus may not be able to meet the stringent requirements for emerging sensing applications. To resolve this issue, a new Task Group (TG), namely IEEE 802.11bf, has been established by the IEEE 802.11 working group, with the objective of creating a new amendment to the WLAN standard to meet advanced sensing requirements while minimizing the effect on communications. This paper provides a comprehensive overview on the up-to- date efforts in the IEEE 802.11bf TG. First, we introduce the definition of the 802.11bf amendment as well as its formation and standardization timeline. Next, we discuss the WLAN sensing use cases with the corresponding key performance indicator (KPI) requirements. After reviewing previous WLAN sensing research based on communication-oriented WLAN standards, we identify their limitations and underscore the practical need for the new sensing-oriented amendm",
+    "pdf_path": "data/raw_papers/49_Du_802_11bf_Overview_COMST_2024_802_11bf_2025.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:50_Path_Diversity_ISAC_2026_MilaGro_NIST_2026": {
+    "id": "local:50_Path_Diversity_ISAC_2026_MilaGro_NIST_2026",
+    "title": "Path to Diversity: A Primer on ISAC-izing",
+    "authors": [
+      "Path"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "path2026path",
+    "abstract": "Integrated Sensing and Communication (ISAC) has emerged as a key paradigm in next-generation wireless networks. While the ubiquity and low deployment cost of commodity Wi-Fi render it an ideal platform for wide-scale sensing, it is the continuous evolution of Wi-Fi standards—towards higher frequency bands, wider bandwidths, and larger antenna ar- rays—that fundamentally unlocks the physical resources required for high-performance ISAC, thereby triggering a surge of related proposals. To structure this rapidly expanding field, a plethora of surveys have appeared. However, prevailing literature predomi- nantly adopts a top-down perspective, emphasizing upper-layer applications or deep learning models while treating the physical layer as an opaque abstraction. Consequently, these works often fail to touch the “bottom layer” of signal formation and lack sub- stantive technical guidance on how to overcome the fundamental physical barriers that constrain sensing performance. To bridge this gap, this tutorial takes a bottom-up approach, systematically analyzing the sensing gains brought by Wi-Fi advancements through the lens of physical-layer diversity. We organize the technical framework",
+    "pdf_path": "data/raw_papers/50_Path_Diversity_ISAC_2026_MilaGro_NIST_2026.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:51_DoRF_2026_arXiv_2608_08381_preprint": {
+    "id": "local:51_DoRF_2026_arXiv_2608_08381_preprint",
+    "title": "DoRF++: Spherical Representation Learning over",
+    "authors": [
+      "DoRF"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "dorf2026dorf",
+    "abstract": "Motivated by the IEEE 802.11bf effort to standardize advanced WLAN sensing, interest in Wi-Fi Channel State Informa- tion (CSI) for passive, device-free, and privacy-preserving activity and gesture recognition has grown rapidly. Recent studies have shown that Doppler velocity projections extracted from CSI, which directly reflect human-motion velocity, enable more robust human activity recognition (HAR) and stronger generalization across users and unseen conditions. Nevertheless, reliable generalization under real-world variability remains a major challenge that hinders the adoption of Wi-Fi sensing. To address this challenge, we build on Doppler Radiance Fields (DoRF), adapting the concept of neural radiance fields (NeRF) from computer vision to Wi-Fi sensing. DoRF treats the extracted Doppler velocity projections as sparse virtual-camera views of human motion. From these views it recovers a regularized latent 3-D motion descriptor whose projections along learned effective Doppler directions explain the CSI observations. The recovered motion is then re-projected onto an equiangular grid of directions on the unit sphere, yielding a spherical representation of the underlying activit",
+    "pdf_path": "data/raw_papers/51_DoRF_2026_arXiv_2608_08381_preprint.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:52_Age_aware_sensing_2026_arXiv_2606_31690_preprint": {
+    "id": "local:52_Age_aware_sensing_2026_arXiv_2606_31690_preprint",
+    "title": "Resource-Eﬀicient WiFi CSI Sensing via Exploiting",
+    "authors": [
+      "Age"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "age2026resource",
+    "abstract": "WiFi channel state information (CSI) sensing must coexist with data communications, which constrains the acquisition rate of fresh CSI measurements. To model this, we formulate CSI-based human activity and identity recognition under a sensing rate constraint that limits the fraction of time slots, within a measurement session, where CSI samples are available. This framework captures sensing-communication resource sharing and uncontrolled packet loss or traﬀic-driven irregularity. To satisfy the sensing constraint, two fixed CSI sampling policies are considered: a deterministic policy and a stochastic Bernoulli policy. We propose a low-cost age- aware WiFi sensing framework that explicitly incorporates sample freshness into the model training. The age of each retained CSI sample is first encoded and then fused with the CSI embedding via multiplicative fusion. On the NTU-Fi human activity recognition and person identification datasets, the proposed model consistently outperforms both a CSI-only baseline and the state-of-the-art time-aware attention model from the UniFi benchmark. For example, it yields up to a 10-percentage-point improvement over the UniFi method for person identific",
+    "pdf_path": "data/raw_papers/52_Age_aware_sensing_2026_arXiv_2606_31690_preprint.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:53_Traffic_robust_2026_arXiv_2605_08308_preprint": {
+    "id": "local:53_Traffic_robust_2026_arXiv_2605_08308_preprint",
+    "title": "Practical Wi-Fi-based Motion Recognition Under",
+    "authors": [
+      "Traffic"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "traffic2026practical",
+    "abstract": "Wi-Fi sensing detects human motions and activities by analysing the channel state information (CSI) derived from Wi-Fi transmissions. However, the impact of variable trans- mission traffic, which dictates the effective sampling rate and interval, is often overlooked. Existing Wi-Fi sensing systems are trained with fixed input size and sampling rate, which suffer from poor sampling rate generalisation. This paper proposes a novel Wi-Fi sensing approach for motion recognition applications, e.g., gesture and activity recognition, under variable traffic patterns. A sampling rate versatile neural network (SRV-NN) based on the transformer is proposed to efficiently handle variable input-sized sensing signals. A dynamic sampling rate augmentation is em- ployed for variable sampling rates and intervals. To validate our approach, we have carried out extensive experimental evaluation, using two self-collected datasets, namely SRV activity and SRV gesture, as well as two publicly available datasets. Our method demonstrated exceptional performance and stability under vari- able sampling rates, with substantial improvements in average accuracy compared to baseline models without augmentation. T",
+    "pdf_path": "data/raw_papers/53_Traffic_robust_2026_arXiv_2605_08308_preprint.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:54_FPNet_2026_arXiv_2602_12799_preprint": {
+    "id": "local:54_FPNet_2026_arXiv_2602_12799_preprint",
+    "title": "FPNet: Joint Wi-Fi Beamforming Matrix Feedback",
+    "authors": [
+      "FPNet"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "fpnet2026fpnet",
+    "abstract": "Channel State Information (CSI) provides a de- tailed description of the wireless channel and has been widely adopted for Wi-Fi sensing, particularly for high-precision in- door positioning. However, complete CSI is rarely available in real-world deployments due to hardware constraints and the high communication overhead required for feedback. Moreover, existing positioning models lack mechanisms to detect when users move outside their trained regions, leading to unreliable estimates in dynamic environments. In this paper, we present FPNet, a unified deep learning framework that jointly addresses channel feedback compression, accurate indoor positioning, and robust anomaly detection (AD). FPNet leverages the beamform- ing feedback matrix (BFM), a compressed CSI representation natively supported by IEEE 802.11ac/ax/be protocols, to minimize feedback overhead while preserving critical positioning features. To enhance reliability, we integrate ADBlock, a lightweight AD module trained on normal BFM samples, which identifies out-of- distribution scenarios when users exit predefined spatial regions. Experimental results using standard 2.4 GHz Wi-Fi hardware show that FPNet achieves posit",
+    "pdf_path": "data/raw_papers/54_FPNet_2026_arXiv_2602_12799_preprint.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:55_WiRSSI_2026_npj_Wireless_Technology": {
+    "id": "local:55_WiRSSI_2026_npj_Wireless_Technology",
+    "title": "Rethinking RSSI for WiFi Sensing",
+    "authors": [
+      "WiRSSI"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "wirssi2026rethinking",
+    "abstract": "The Received Signal Strength Indicator (RSSI) is ubiquitously available on commodity WiFi devices but is commonly regarded as too coarse for fine-grained sensing. This paper revisits its sensing potential and presents WiRSSI, a bistatic WiFi sensing framework that enables RSSI-only passive human tracking and motion sensing. WiRSSI employs a transmitter and a receiver equipped with a three-antenna array (1Tx- 3Rx), and is readily extensible to Multiple-Input Multiple-Output (MIMO) deployments. We first show how Channel State Information (CSI) power implicitly preserves phase-related motion modulation and how this relationship carries over to RSSI, indicating that RSSI can retain exploitable Doppler, Angle-of-Arrival (AoA), and delay cues. WiRSSI extracts Doppler-AoA features via a lightweight 2D Fast Fourier Transform (FFT) pipeline and infers bistatic delay from amplitude-only information in the absence of subcarrier-level phase. The estimated AoA and delay are then mapped to Cartesian coordinates and denoised to recover motion trajectories. Experiments in practical environments show that WiRSSI achieves median XY localiza- tion errors of 0.905 m, 0.784 m, and 0.785 m for elliptica",
+    "pdf_path": "data/raw_papers/55_WiRSSI_2026_npj_Wireless_Technology.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:AMAR_SetPrediction_arXiv_2605_20649": {
+    "id": "local:AMAR_SetPrediction_arXiv_2605_20649",
+    "title": "AMAR: Lightweight Attention-Based Multi-User Activity",
+    "authors": [
+      "SetPrediction"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "amar2024amar",
+    "abstract": "Wi-Fi–based human activity recognition (HAR) has emerged as a promising approach for contactless sensing, leveraging channel state information (CSI) collected from wireless transceivers. While existing studies have primarily concentrated on single-user scenarios, real-world deploy- ments often involve multi-user settings where concurrent users’ movements induce overlapping CSI patterns that challenge conventional classification methods. To address this limitation, this paper introduces an attention-based multi-user activity recognition (AMAR) framework that formulates HAR as a set prediction problem. The transformer-based architecture in AMAR leverages learnable query embeddings acting as specialized activity detectors, enabling the si- multaneous identification of multiple activities from composite CSI representations. Moreover, to address deployment constraints, AMAR is designed in an edge-cloud split architecture form where lightweight convolutional networks on edge devices perform initial feature extraction, followed by residual vector quantization that achieves substantial bandwidth reduction while preserving activity-discriminative information. The cloud component performs fi",
+    "pdf_path": "data/raw_papers/AMAR_SetPrediction_arXiv_2605_20649.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:ARAlarm_IntrusionDetection": {
+    "id": "local:ARAlarm_IntrusionDetection",
+    "title": "Robust Device-Free Intrusion Detection Using",
+    "authors": [
+      "IntrusionDetection.pdf"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "aralarm2024robust",
+    "abstract": "WiFi infrastructures are widely deployed in both public and private buildings. They make the connection to the internet more convenient. Recently, researchers ﬁnd that WiFi signals have the ability to sense the changes in the environment that can detect human motion and even identify human activities and his identity in a device-free manner, and has many potential security applications in a smart home. Previous human detection systems can only detect human motion of regular moving patterns. However, they may have a signiﬁcant detection performance degradation when used in intrusion detection. In this study, we propose Robust Device-Free Intrusion Detection (RDFID) system leveraging ﬁne-grained Channel State Information (CSI). The noises in the signals are removed by a Principle Component Analysis (PCA) and a low pass ﬁlter. We extract a robust feature of frequency domain utilizing Continuous Wavelet Transform (CWT) from all subcarriers. RDFID captures the changes from the whole wireless channel, and a threshold is obtained self-adaptively, which is calibration-free in different environments, and can be deployed in smart home scenarios. We implement RDFID using commodity WiFi device",
+    "pdf_path": "data/raw_papers/ARAlarm_IntrusionDetection.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:AntiFall_arXiv_1507_01057": {
+    "id": "local:AntiFall_arXiv_1507_01057",
+    "title": "This article is a corrected version of the original one published in Inclusive Smart",
+    "authors": [
+      "arXiv"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "antifall2024this",
+    "abstract": "Fall is one of the major health threats and obstacles to independent living for elders, timely and reliable fall detection is crucial for mitigating the effects of falls. In this paper, leveraging the fine-grained Channel State Information (CSI) and multi-antenna setting in commodity WiFi devices, we design and implement a real-time, non-intrusive, and low-cost indoor fall detector, called Anti-Fall. For the first time, the CSI phase difference over two antennas is identified as the salient feature to reliably segment the fall and fall- like activities, both phase and amplitude information of CSI is then exploited to accurately separate the fall from other fall-like activities. Experimental results in two indoor scenarios demonstrate that Anti-Fall consistently outperforms the state-of-the-art approach WiFall, with 10% higher detection rate and 10% less false alarm rate on average.",
+    "pdf_path": "data/raw_papers/AntiFall_arXiv_1507_01057.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:Argus_OpenSet_arXiv_2608_14670": {
+    "id": "local:Argus_OpenSet_arXiv_2608_14670",
+    "title": "ARGUS: Attention-Guided Transformers for Scalable Person Identification Using",
+    "authors": [
+      "OpenSet"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "argus2024argus",
+    "abstract": "Passive, device-free person identification offers an alterna- tive to camera- and wearable-based biometrics, yet existing wireless approaches rely largely on gait or activity cues and are rarely evaluated at scale. In this paper, we present Argus, a passive Wi-Fi sensing system that identifies people from commodity Channel State Information (CSI) without requir- ing an attached device or a prescribed motion. Argus con- verts short CSI spans into compact statgrams: statistical maps built from the channel views available on a given device. A lightweight decoder-only Transformer then reads coarse stat- gram patches as tokens, and segment-level logit aggregation combines evidence over time. On a 154-subject CSI dataset evaluated with a strict physical-segment split, Argus reaches 78.88% ± 1.62% Top-1 accuracy on 6-second windows and 84.85% ± 1.31% after aggregating 19 overlapping windows over a 60-second segment; Top-3 and Top-5 reach 98.61% and 99.26%. For a 60-second statgram, Argus improves over a raw-CSI Transformer baseline by 7.75 points while using 4.4× fewer FLOPs per window. Attention-guided compres- sion preserves full single-window accuracy with only half of the EHealth patc",
+    "pdf_path": "data/raw_papers/Argus_OpenSet_arXiv_2608_14670.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:AttCL-HAR_An_Attention-Based_CNN-LSTM_Framework_for_Inertial_Human_Activity_Recognition": {
+    "id": "local:AttCL-HAR_An_Attention-Based_CNN-LSTM_Framework_for_Inertial_Human_Activity_Recognition",
+    "title": "AttCL-HAR: An Attention-Based CNN-LSTM",
+    "authors": [
+      "An"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "attcl2024attcl",
+    "abstract": "Human activity recognition (HAR) is an important research topic in intelligent health monitoring, smart elderly care, and human-computer interaction. To address the challenges of strong non-stationarity, significant inter-subject variability, and high similarity among activity categories in inertial measurement unit (IMU) data, this paper proposes a HAR method that uses long short-term memory (LSTM) for temporal modeling and integrates convolutional neural networks (CNNs) with multi- head self-attention (MHA). The method combines sliding-window preprocessing, LSTM-based temporal modeling, CNN-based local feature extraction, and MHA to enhance discriminative repre- sentation. Experiments on UCI-HAR, WISDM, and PAMAP2 show that the proposed method achieves accuracies of 94.13%, 99.62%, and 91.79%, respectively, demonstrating its effectiveness and robustness.",
+    "pdf_path": "data/raw_papers/AttCL-HAR_An_Attention-Based_CNN-LSTM_Framework_for_Inertial_Human_Activity_Recognition.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:Avola_StaticPersonID_arXiv_2507_12854": {
+    "id": "local:Avola_StaticPersonID_arXiv_2507_12854",
+    "title": "Transformer-Based Person Identification",
+    "authors": [
+      "StaticPersonID"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "avola2024transformer",
+    "abstract": "Wi-Fi sensing is gaining momentum as a non-intrusive and privacy-preserving alternative to vision-based systems for human identification. However, person identification through wireless signals, particularly without user motion, remains largely unexplored. Most prior wireless-based approaches rely on movement patterns, such as walking gait, to extract biometric cues. In contrast, we propose a transformer-based method that identifies individuals from Channel State Information (CSI) recorded while the subject remains stationary. CSI captures fine-grained amplitude and phase distortions induced by the unique interaction be- tween the human body and the radio signal. To support evaluation, we introduce a dataset acquired with ESP32 de- vices in a controlled indoor environment, featuring six par- ticipants observed across multiple orientations. A tailored preprocessing pipeline, including outlier removal, smooth- ing, and phase calibration, enhances signal quality. Our dual-branch transformer architecture processes amplitude and phase modalities separately and achieves 99.82% clas- sification accuracy, outperforming convolutional and mul- tilayer perceptron baselines. These results demo",
+    "pdf_path": "data/raw_papers/Avola_StaticPersonID_arXiv_2507_12854.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:BabyMamba_HAR_arXiv_2602_09872": {
+    "id": "local:BabyMamba_HAR_arXiv_2602_09872",
+    "title": "BabyMamba-HAR: Lightweight Selective State",
+    "authors": [
+      "HAR"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "babymamba2024babymamba",
+    "abstract": "Human activity recognition (HAR) on resource con- strained devices requires high accuracy across diverse sensor setups. Selective state space models (SSMs) offer efficient linear time sequence processing, presenting a compelling alternative to attention mechanisms. However, their TinyML design space remains unexplored. This paper introduces BabyMamba-HAR, comprising two lightweight architectures: (1) CI-BabyMamba- HAR, utilizing a channel independent stem for noise robustness, and (2) Crossover-BiDir-BabyMamba-HAR, utilizing an early fusion stem for channel count independent complexity. Both integrate weight tied bidirectional scanning and gated temporal attention pooling. Across eight benchmarks, Crossover-BiDir- BabyMamba-HAR averages an 86.52% F1-score with 27K pa- rameters and 2.21M MACs, matching TinyHAR (86.16%) while requiring 11× fewer MACs on high channel datasets. On-device deployment on the Raspberry Pi Pico 2 and ESP32 utilized a mixed precision C++ runtime (INT8 projections, float32 states). A fused computation strategy with lifetime aware memory manage- ment reduces peak memory footprint from O(B·dmodel·L·dstate) to O(B · dmodel · dstate), adapting to support weight-t",
+    "pdf_path": "data/raw_papers/BabyMamba_HAR_arXiv_2602_09872.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:BreathID_Respiration_Sensing_for_Human_Identification_Using_Commodity_Wi-Fi": {
+    "id": "local:BreathID_Respiration_Sensing_for_Human_Identification_Using_Commodity_Wi-Fi",
+    "title": "BreathID: Respiration Sensing for Human",
+    "authors": [
+      "Respiration"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "breathid2024breathid",
+    "abstract": "Human identiﬁcation is essential for current intelli- gent applications. Traditional human identiﬁcation methods usu- ally require dedicated collection equipment or user cooperation, which limits the application scope of human identiﬁcation. Recent research works have shown that Wi-Fi signals can support ﬁne- grained sensing for human respiration. In this article, we leverage Wi-Fi signals to collect and recognize a unique physiological feature of humans, i.e., the respiration, for device-free and nonintrusive human identiﬁcation. We propose a respiration sensing-based hu- man identiﬁcation system, namely BreathID. BreathID explores the nature of the amplitude and phase data in the CSI ratio model through vector analysis. By jointly using the discrete wavelet transform (DWT) and fake peak removal method, we accurately calculate the respiration rate and extract the breathing feature. We also propose a weighted multidimensional dynamic time warping (WMD-DTW) algorithm to realize the human identiﬁcation based on multiple input multiple output (MIMO) technology. We imple- menttheBreathIDsystemoncommercialWi-Fidevices.Theresults show that BreathID can identify 11 users in three typical ",
+    "pdf_path": "data/raw_papers/BreathID_Respiration_Sensing_for_Human_Identification_Using_Commodity_Wi-Fi.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:CardioFi_SenSys2018": {
+    "id": "local:CardioFi_SenSys2018",
+    "title": "CardioFi: Enabling Heart Rate Monitoring on Unmodified COTS",
+    "authors": [
+      "SenSys2018.pdf"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "cardiofi2024cardiofi",
+    "abstract": "Heart rate is one of the most important vital signals for personal health tracking. A number of approaches were proposed to monitor heart rate, ranging from wearables to device-less systems. While WiFi has been shown to track heart rate accurately, existing solu- tions rely on directional antennas to improve the signal quality and ultimately the accuracy of heart rate estimation. Special hardware used in these approaches limits their applicability and truly device- less and ubiquitous heart rate monitoring is yet to be achieved. In this paper, we propose CardioFi: a system that can accu- rately monitor vital signs through COTS WiFi hardware with omni- directional antennas. Our key challenge is the substantial radio frequency noise that affects WiFi transmissions in real-world envi- ronments. However, we observe that a few sub-carriers are typically less affected by multipath and the heart beating motion can be ac- curately detected in their frequency spectrum. We present a novel sub-carrier selection scheme that allows us to detect and amplify signal from these sub-carriers even in low signal-to-noise ratio sce- narios. We show that CardioFi estimates heart rate with 1.1 beats per ",
+    "pdf_path": "data/raw_papers/CardioFi_SenSys2018.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:Chetty_LowCost_ThroughWall_FMCW_Radar": {
+    "id": "local:Chetty_LowCost_ThroughWall_FMCW_Radar",
+    "title": "A Low-Cost Through-Wall FMCW Radar for Stand-Off Operation",
+    "authors": [
+      "LowCost"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "chetty2024low",
+    "abstract": "In this paper we present a new through-wall (TW) FMCW radar system. The architecture of the radar enables both high sensitivity and range resolutions of <1.5 m. Moreover, the radar employs moving target indication (MTI) signal processing to remove the problematic primary wall reflection, allowing higher signal-to- noise and signal-to-interference ratios, which can be traded-off for increased operational stand-off. The TW radar operates at 5.8 GHz with a 200 MHz bandwidth. Its dual-frequency design minimises interference from signal leakage, and permits a baseband output after deramping which is digitized using an inexpensive 24-bit off-the-shelf sound card. The system is therefore an order of magnitude lower in cost than competitor ultrawideband (UWB) TW systems. The high sensitivity afforded by this wide dynamic range has allowed us to develop a wall removal technique whereby high-order digital filters provide a flexible means of MTI filtering based on the phases of the returned echoes. Experimental data demonstrates through-wall detection of individuals and groups of people in various scenarios. Target positions were located to within ±1.25 m in range, allowing us distinguish bet",
+    "pdf_path": "data/raw_papers/Chetty_LowCost_ThroughWall_FMCW_Radar.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:Contactless_Respiration_Monitoring_HW_Thesis": {
+    "id": "local:Contactless_Respiration_Monitoring_HW_Thesis",
+    "title": "Heriot-Watt University",
+    "authors": [
+      "Respiration"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "contactless2024heriot",
+    "abstract": "Detecting respiration in a non-intrusive manner is beneficial not only for convenience but also for cases where the traditional ways cannot be applied. This paper presents a novel simple low-cost system where ambient Wi-Fi signals are acquired by a third-party tool (Nexmon) installed in a Raspberry Pi and is able to detect the respiration time domain waveform of a person. This tool was selected as it uses 80 MHz bandwidth of the Wi-Fi signal and supports the latest implementations that are widely used, such as 802.11ac. A neural network is developed to detect the respiration frequency of the waveform. Generated waves emulating respiration waveforms were used for training, validating, and testing the model. The model can be applied to unseen real measurement data and successfully determine the breathing frequency with a very low average error of 4.7% tested in 20 measurement datasets.",
+    "pdf_path": "data/raw_papers/Contactless_Respiration_Monitoring_HW_Thesis.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:DGSense_arXiv_2502_08155": {
+    "id": "local:DGSense_arXiv_2502_08155",
+    "title": "DGSense: A Domain Generalization Framework for",
+    "authors": [
+      "arXiv"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "dgsense2024dgsense",
+    "abstract": "Wireless sensing is of great beneﬁts to our daily lives. By analyzing the impact of human body and movements on wireless propagation, a variety of sensing tasks can be enabled. However, wireless signals are sensitive to the surroundings. Various factors, e.g. environments, locations, and individuals, may induce extra impact on wireless propagation. Such a change can be regarded as a domain, in which the data distribution shifts. A vast majority of the sensing schemes are learning- based. They are dependent on the training domains, resulting in performance degradation in unseen domains. Researchers have proposed various solutions to address this issue. But these solutions leverage either semi-supervised or unsupervised domain adaptation techniques. They still require some data in the target domains and do not perform well in unseen domains. In this paper, we propose a domain generalization framework DGSense, to eliminate the domain dependence problem in wireless sensing. The framework is a general solution working across diverse sensing tasks and wireless technologies. Once the sensing model is built, it can generalize to unseen domains without any data from the target domain. To ac",
+    "pdf_path": "data/raw_papers/DGSense_arXiv_2502_08155.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:DeepCount_arXiv_1903_05316": {
+    "id": "local:DeepCount_arXiv_1903_05316",
+    "title": "DeepCount: Crowd Counting with WiFi via",
+    "authors": [
+      "arXiv"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "deepcount2024deepcount",
+    "abstract": "Recently, the research of wireless sensing has achieved more intelligent results, and the intelligent sensing of human location and activity can be realized by means of WiFi devices. However, most of the current human environment perception work is limited to a single person’s environment, because the environment in which multiple people exist is more complicated than the environment in which a single person exists. In order to solve the problem of human behavior perception in a multi-human environment, we ﬁrst proposed a solution to achieve crowd counting (inferred population) using deep learning in a closed environment with WIFI signals - DeepCout, which is the ﬁrst in a multi-human environment. step. Since the use of WiFi to directly count the crowd is too complicated, we use deep learning to solve this problem, use Convolutional Neural Network(CNN) to automatically extract the relationship between the number of people and the channel, and use Long Short Term Memory(LSTM) to resolve the dependencies of number of people and Channel State Information(CSI) . To overcome the massive labelled data required by deep learning method, we add an online learning mechanism to determine whet",
+    "pdf_path": "data/raw_papers/DeepCount_arXiv_1903_05316.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:EHUNAM_SciData_2025": {
+    "id": "local:EHUNAM_SciData_2025",
+    "title": "www.nature.com/scientificdata",
+    "authors": [
+      "SciData"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "ehunam2024www",
+    "abstract": "",
+    "pdf_path": "data/raw_papers/WiPER81_SciData_2025.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:FallDetection_PhysicsTransformer_arXiv_2605_00869": {
+    "id": "local:FallDetection_PhysicsTransformer_arXiv_2605_00869",
+    "title": "Robust Cross-Domain WiFi Fall Detection via",
+    "authors": [
+      "PhysicsTransformer"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "falldetection2024robust",
+    "abstract": "Device-free fall detection utilizing WiFi Channel State Information (CSI) has emerged as a promising, privacy- preserving solution for elderly health monitoring in the In- ternet of Things (IoT) era. However, existing deep learning approaches suffer from severe performance degradation when deployed in unseen environments due to static background overfitting and Non-Line-of-Sight (NLoS) signal attenuation. To address these critical bottlenecks, we propose a robust, domain- generalizable framework featuring a novel Attention-Enhanced CNN-Transformer hybrid architecture. First, we design a physics- driven Dynamic Variance Gate (DVG) to dynamically calculate local temporal variance, acting as a soft-attention mask that eliminates static environmental DC components while amplifying dynamic human motion. Second, we introduce a Physics-Aware Data Augmentation strategy to force the network to learn invari- ant morphological signatures rather than environment-specific noise. Furthermore, a Convolutional Block Attention Module (CBAM) is integrated to refine spatiotemporal features prior to Transformer-based sequence modeling. Extensive cross-domain evaluations across four distinct indoor env",
+    "pdf_path": "data/raw_papers/FallDetection_PhysicsTransformer_arXiv_2605_00869.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:Hernandez_Bulut_EdgeSurvey_COMST2023": {
+    "id": "local:Hernandez_Bulut_EdgeSurvey_COMST2023",
+    "title": "WiFi Sensing on the Edge: Signal Processing",
+    "authors": [
+      "Bulut"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "hernandez2024wifi",
+    "abstract": "In this work, we evaluate the feasibility of deploying ubiquitous WiFi sensing systems at the edge and consider the applicability of existing techniques on constrained edge devices and what challenges still exist for deploying WiFi sensing devices outside of laboratory environments. Through an extensive survey of existing literature in the area of WiFi sensing, we discover common signal processing techniques and evaluate the applicability of these techniques for online edge systems. Based on these techniques, we develop a topology of components required for a low-cost WiFi sensing system and develop a low-cost WiFi sensing system using ESP32 IoT microcontroller edge devices. We perform numerous real world WiFi sensing experiments to thoroughly evaluate machine learning prediction accuracy by performing Tree-structured Parzen Estimator (TPE) hyperparameter optimization to independently identify optimal hyperparameters for each method. Additionally, we evaluate our system directly on-board the ESP32 with respect to computation time per method and overall sample throughput rate. Through this evaluation, we demonstrate how an edge WiFi sensing system enables online machine learning thr",
+    "pdf_path": "data/raw_papers/Hernandez_Bulut_EdgeSurvey_COMST2023.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:IET Radar Sonar   Navi - 2024 - Di Seglio - Comparing reference‐free WiFi radar sensing approaches for monitoring people": {
+    "id": "local:IET Radar Sonar   Navi - 2024 - Di Seglio - Comparing reference‐free WiFi radar sensing approaches for monitoring people",
+    "title": "Received: 1 May 2023",
+    "authors": [
+      "Anon"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "iet2024received",
+    "abstract": "The use of WiFi signals for sensing purposes has attracted a lot of interest from both the radar and communications communities and several techniques have been explored. In the attempt of meeting the requirements for small sensor size, compactness, and easy deployment, the authors consider reference‐free approaches, namely approaches that do not require a good copy of the transmitted waveform to be available at the radar receiver. To this end, the authors first resort to a passive radar‐based processing scheme that only exploits the invariant a priori known initial portion of the physical layer protocol data unit, that is, the PHY Preamble, and its limitations in practical applications is investigated. Specifically, the authors show that, with this approach, an accurate time, phase, and frequency synchronization is essential and a possible strategy is investigated. As an alternative solution the authors consider a forward scatter radar‐based approach where only the amplitude modulation of the received signal is exploited to detect the presence of a moving target thus avoiding the need to know the transmitted signal. For the first time, the authors comparatively investigate advanta",
+    "pdf_path": "data/raw_papers/IET Radar Sonar   Navi - 2024 - Di Seglio - Comparing reference‐free WiFi radar sensing approaches for monitoring people.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:Kotaru_Position_Tracking_for_CVPR_2017_paper": {
+    "id": "local:Kotaru_Position_Tracking_for_CVPR_2017_paper",
+    "title": "Position Tracking for Virtual Reality Using Commodity WiFi",
+    "authors": [
+      "Position"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "kotaru2024position",
+    "abstract": "Today, experiencing virtual reality (VR) is a cumbersome experience which either requires dedicated infrastructure like infrared cameras to track the headset and hand-motion controllers (e.g. Oculus Rift, HTC Vive), or provides only 3-DoF (Degrees of Freedom) tracking which severely limits the user experience (e.g. Samsung Gear VR). To truly en- able VR everywhere, we need position tracking to be avail- able as a ubiquitous service. This paper presents WiCap- ture, a novel approach which leverages commodity WiFi infrastructure, which is ubiquitous today, for tracking pur- poses. We prototype WiCapture using off-the-shelf WiFi ra- dios and show that it achieves an accuracy of 0.88 cm com- pared to sophisticated infrared-based tracking systems like the Oculus, while providing much higher range, resistance to occlusion, ubiquity and ease of deployment.",
+    "pdf_path": "data/raw_papers/Kotaru_Position_Tracking_for_CVPR_2017_paper.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:MetaLearning_CountLoc_arXiv_2502_03117": {
+    "id": "local:MetaLearning_CountLoc_arXiv_2502_03117",
+    "title": "Meta-Learning-Based People Counting and",
+    "authors": [
+      "CountLoc"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "metalearning2024meta",
+    "abstract": "In this paper, we consider people counting and localization systems exploiting channel state information (CSI) measured from commodity WiFi network interface cards (NICs). While CSI has useful information of amplitude and phase to describe signal propagation in a measurement environment of interest, CSI measurement suffers from offsets due to various uncertainties. Moreover, an uncontrollable external environment where other WiFi devices communicate each other induces interfering signals, resulting in erroneous CSI captured at a receiver. In this paper, preprocessing of CSI is ﬁrst proposed for offset removal, and it guarantees low-latency operation without any ﬁltering process. Afterwards, we design people counting and localization models based on pre-training. To be adaptive to different measurement environments, meta-learning- based people counting and localization models are also proposed. Numerical results show that the proposed meta-learning-based people counting and localization models can achieve high sensing accuracy, compared to other learning schemes that follow simple training and test procedures.",
+    "pdf_path": "data/raw_papers/MetaLearning_CountLoc_arXiv_2502_03117.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:Multiperson_Localization_arXiv_2403_01153": {
+    "id": "local:Multiperson_Localization_arXiv_2403_01153",
+    "title": "Transfer Learning-Enhanced Instantaneous",
+    "authors": [
+      "Localization"
+    ],
+    "year": 2024,
+    "venue": "Domain Generalization & Transfer",
+    "bibtex_key": "multiperson2024transfer",
+    "abstract": "Passive indoor localization, integral to smart build- ings, emergency response, and indoor navigation, has tradition- ally been limited by a focus on single-target localization and reliance on multi-packet CSI. We introduce a novel Multi-target loss, notably enhancing multi-person localization. Utilizing this loss function, our instantaneous CSI-ResNet achieves an impres- sive 99.21% accuracy at 0.6m precision with single-timestamp CSI. A preprocessing algorithm is implemented to counteract WiFi-induced variability, thereby augmenting robustness. Fur- thermore, we incorporate Nuclear Norm-Based Transfer Pre- Training, ensuring adaptability in diverse environments, which provides a new paradigm for indoor multi-person localization. Additionally, we have developed an extensive dataset, surpassing existing ones in scope and diversity, to underscore the efficacy of our method and facilitate future fingerprint-based localization research. Index Terms—Wireless sensing, Channel state informa- tion(CSI), WIFI localization, Fingerprinting, Signal Processing",
+    "pdf_path": "data/raw_papers/Multiperson_Localization_arXiv_2403_01153.pdf",
+    "screening_status": "approved",
+    "category": "Domain Generalization & Transfer",
+    "screening_reason": "Core corpus paper (Domain Generalization & Transfer)"
+  },
+  "local:Pu_WiSee_SIGCOMM2013": {
+    "id": "local:Pu_WiSee_SIGCOMM2013",
+    "title": "Whole-Home Gesture Recognition Using Wireless Signals",
+    "authors": [
+      "WiSee"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "pu2024whole",
+    "abstract": "– This paper presents WiSee, a novel gesture recognition system that leverages wireless signals (e.g., Wi- Fi) to enable whole-home sensing and recognition of human gestures. Since wireless signals do not require line-of-sight and can traverse through walls, WiSee can enable whole- home gesture recognition using few wireless sources. Further, it achieves this goal without requiring instrumentation of the human body with sensing devices. We implement a proof-of- concept prototype of WiSee using USRP-N210s and evaluate it in both an oﬃce environment and a two-bedroom apart- ment. Our results show that WiSee can identify and classify a set of nine gestures with an average accuracy of 94%. Categories and Subject Descriptors C.2.1 [Network Architecture and Design]: Wireless Communication",
+    "pdf_path": "data/raw_papers/Pu_WiSee_SIGCOMM2013.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:PulseFi_short_paper_IOTDCOSS": {
+    "id": "local:PulseFi_short_paper_IOTDCOSS",
+    "title": "Pulse-Fi: A Low-Cost System for Accurate Heart",
+    "authors": [
+      "short"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "pulsefi2024pulse",
+    "abstract": "Non-intrusive monitoring of vital signs has become increasingly important in various healthcare settings. In this paper, we present Pulse-Fi, a novel low-cost system that uses Wi-Fi Channel State Information (CSI) and machine learning to accurately monitor heart rate. Pulse-Fi operates using low-cost commodity devices, making it more accessible and cost-effective. It uses a signal processing pipeline to process CSI data fed into a custom low-compute Long Short-Term Memory (LSTM) neural network model. We evaluated Pulse-Fi using two datasets: one that we collected locally using ESP32 devices named ESP- HR-CSI Dataset and another containing recordings of 118 participants using the Raspberry Pi 4B called EHealth, making it the most comprehensive data set of its kind. Our results show that Pulse-Fi can effectively estimate heart rate from CSI signals with comparable or better accuracy than hardware with multiple antenna systems, which can be expensive.",
+    "pdf_path": "data/raw_papers/PulseFi_short_paper_IOTDCOSS.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:SoK_CSI_Biometrics_arXiv_2511_11381": {
+    "id": "local:SoK_CSI_Biometrics_arXiv_2511_11381",
+    "title": "SoK: Security Evaluation of Wi-Fi CSI Biometrics: Attacks, Metrics, and Open",
+    "authors": [
+      "CSI"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "sok2024sok",
+    "abstract": "Wi-Fi Channel State Information (CSI) has been repeatedly proposed as a biometric modality, often with reports of high accuracy and operational feasibility. However, the field lacks a consolidated understanding of its security properties, adversarial resilience, and methodological con- sistency. This Systematization of Knowledge (SoK) examines CSI-based biometric authentication through a security lens, analyzing how existing works diverge in sensing infras- tructure, signal representations, feature pipelines, learning models, and evaluation methodologies. Our synthesis reveals systemic inconsistencies: reliance on aggregate accuracy met- rics, limited reporting of FAR/FRR/EER, absence of per-user risk analysis, and scarce consideration of threat models or adversarial feasibility. To this end, we construct a unified evaluation framework to expose these issues empirically and demonstrate how security-relevant metrics such as per-class EER, Frequency Count of Scores (FCS), and the Gini Coefficient uncover risk concentration that remains hidden under traditional re- porting practices. The resulting analysis highlights concrete attack surfaces—including replay, geometric mimicry, and en",
+    "pdf_path": "data/raw_papers/SoK_CSI_Biometrics_arXiv_2511_11381.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:Survey_WiFi_HumanID_MDPI_24_19_6413": {
+    "id": "local:Survey_WiFi_HumanID_MDPI_24_19_6413",
+    "title": "Citation: Mosharaf, M.; Kwak, J.B.;",
+    "authors": [
+      "WiFi"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "survey2024citation",
+    "abstract": "In the modern world of human–computer interaction, notable advancements in human identification have been achieved across fields like healthcare, academia, security, etc. Despite these advancements, challenges remain, particularly in scenarios with poor lighting, occlusion, or non-line-of-sight. To overcome these limitations, the utilization of radio frequency (RF) wireless signals, particularly wireless fidelity (WiFi), has been considered an innovative solution in recent research studies. By analyzing WiFi signal fluctuations caused by human presence, researchers have developed machine learning (ML) models that significantly improve identification accuracy. This paper conducts a comprehensive survey of recent advances and practical implementations of WiFi-based human identification. Furthermore, it covers the ML models used for human identification, system overviews, and detailed WiFi-based human identification methods. It also includes system evaluation, discussion, and future trends related to human identification. Finally, we conclude by examining the limitations of the research and discussing how researchers can shift their attention toward shaping the future trajectory of hu",
+    "pdf_path": "data/raw_papers/Survey_WiFi_HumanID_MDPI_24_19_6413.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:VolunteerTrials_OlderAdults_PMC12599888": {
+    "id": "local:VolunteerTrials_OlderAdults_PMC12599888",
+    "title": "Received 15 May 2025; revised 22 August 2025 and 3 October 2025; accepted 17 October 2025.",
+    "authors": [
+      "OlderAdults"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "volunteertrials2024received",
+    "abstract": "Objective: This study describes the design and evaluation of volunteer user trials of an unob- trusive Wi-Fi Channel State Information (CSI) vital sign sensing system in older participants aged 60 years and older in different home environments. Methods and procedures: In terms of experiment design, the implementation of user-centric sensor placement and integration informed consent with various experimental elements in the design of experiments of older people. The implemented signal processing algorithm, which extracts vital signs from the Wi-Fi CSI signal to obtain respiration and heart rate measurements, employs wavelet filtering techniques. For selecting of vital sign signals from the 52 CSI subcarriers, the Principal Component Sample Entropy (PC-SampEn) was implemented to capture the information most relevant to vital signs. Results: Two cardiorespiratory vital sign measurements were validated against wearable ground-truth devices, a respiratory belt and a photoplethysmogram (PPG). The results demonstrated an expected decrease in accuracy and measurement agreement in uncontrolled home environments. Conclusion: Although respira- tory rate measurements have demonstrated promisin",
+    "pdf_path": "data/raw_papers/VolunteerTrials_OlderAdults_PMC12599888.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:WiAlarm_IntruderDetection": {
+    "id": "local:WiAlarm_IntruderDetection",
+    "title": "Abstract—In this paper, we design a device-free intruder",
+    "authors": [
+      "IntruderDetection.pdf"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "wialarm2024abstract",
+    "abstract": "In this paper, we design a device-free intruder detection and alarm system, named WiGarde by exploiting off-the-shelf Wi-Fi channel state information (CSI) to detect an intruder through door or window. WiGarde extracts the CSI amplitude information across MIMO antennas. We implemented WiGarde with commercial IEEE 802.11 NICs and evaluated its performance in two cluttered indoor environments. The system is robust and avoids false alarm occurrence, owing to our novel bad stream elimination algorithm. To extract the best feature, we design a new method to intercept the segment of the signal of intrusion based on wavelet analysis and dynamic time window based on Short-time Energy. We adopt Support Vector Machine (SVM) algorithm to classify human intrusion; our SVM algorithm could classify intrusion process with general walking through the area of interest. We compare WiGarde with the previous approaches; results show that our system outperforms the corresponding best CSI-based and RSSI-based in both of static and motion states. Our system gained high accuracy of 94.5% in a dynamic environment for intrusion through door or window.",
+    "pdf_path": "data/raw_papers/WiAlarm_IntruderDetection.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:X_CAUTION_IoT2022": {
+    "id": "local:X_CAUTION_IoT2022",
+    "title": "CAUTION: A Robust WiFi-based Human",
+    "authors": [
+      "CAUTION"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "x2024caution",
+    "abstract": "Existing Channel State Information (CSI)-based hu- man authentication systems in literature require a large amount of CSI data to train deep neural network (DNN) models, and are ineffective for unknown intruder detection. To address this issue, we propose a CSI-based human authentication system (CAU- TION) which is able to learn distinctive gait features of different users through CSI data to perform human authentication in this paper. By taking advantages of few-shot learning, CAUTION is able to construct an accurate user identification model with a very limited number of CSI training data. By converting the CSI samples into low dimensional representations on the feature plane, it computes central points for different users as their CSI profiles and introduces an intruder threshold to measure whether the CSI data matches one of the user classes by a margin. The intruder threshold is able to be optimized without any intruders’ data. CAUTION does not require a large number of training data and provides an effective way to train the system for unknown intruder detection. We have tested CAUTION at different places and compared it with state-of-the-art CSI-based authentication systems.",
+    "pdf_path": "data/raw_papers/X_CAUTION_IoT2022.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:X_MultiSense_hal03363355": {
+    "id": "local:X_MultiSense_hal03363355",
+    "title": "HAL Id: hal-03363355",
+    "authors": [
+      "MultiSense"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "x2024hal",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2020 Association for Computing Machinery. 2474-9567/2020/9-ART102 $15.00 https://doi.org/10.1145/3411816 Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 4, No. 3, Article 102. Publication date: September 2020.",
+    "pdf_path": "data/raw_papers/X_MultiSense_hal03363355.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:X_VitalCSI_mdpi_26_1_225": {
+    "id": "local:X_VitalCSI_mdpi_26_1_225",
+    "title": "Academic Editors: Carlo Massaroni,",
+    "authors": [
+      "VitalCSI"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "x2024academic",
+    "abstract": "Continuous respiratory rate (RR) monitoring can improve the detection of clinical events, such as pulmonary infections, cardiac arrests, and sleep apnoea. Wi-Fi-based systems offer a low-cost, contactless alternative to radar and video. However, existing studies are limited to narrow respiratory ranges and small-scale validation. We present VitalCSI, a vital sign monitoring system using off-the-shelf, low-power Wi-Fi hardware. We recorded 15 healthy university athlete volunteers and developed RR estimation algorithms bench- marked against nasal airflow sensors. VitalCSI uses a consumer Wi-Fi access point and a Raspberry Pi computer to capture channel state information (CSI). We estimated the RR from CSI via principal component analysis (PCA), spectral peak detection, and breath (counting in 30 s windows), which were then fused by a multidimensional Kalman filter. VitalCSI showed strong agreement with airflow references (r2 = 0.93, MAE = 1.20 brpm), tracking RR across 6–33 brpm and outperforming prior Wi-Fi studies. VitalCSI demon- strates the feasibility of RR monitoring with a single-antenna, single-board microcomputer as the Wi-Fi transmitter. It is the first validated system for",
+    "pdf_path": "data/raw_papers/X_VitalCSI_mdpi_26_1_225.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:X_WiDetect_IMWUT2019": {
+    "id": "local:X_WiDetect_IMWUT2019",
+    "title": "WiDetect: Robust Motion Detection with a Statistical",
+    "authors": [
+      "WiDetect"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "x2024widetect",
+    "abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. © 2019 Association for Computing Machinery. 2474-9567/2019/9-ART122 $15.00 https://doi.org/10.1145/3351280 Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 3, No. 3, Article 122. Publication date: September 2019. 122:2 • Zhang et al. Table 1. Comparison among different technologies. Camera PIR Pressure Sound WiFi-based Existing WiDetect Accurate \u0017 \u0017 \u0013 \u0013 \u0013 \u0013 Robust \u0017 \u0013 \u0013 \u0017 \u0017 \u0013 Coverage LOS LOS Contact Room Room Whole home Calibration-free \u0013 \u0013 \u0013 \u0013 \u0017 \u0013",
+    "pdf_path": "data/raw_papers/X_WiDetect_IMWUT2019.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  },
+  "local:X_WiTraj_hal03548446": {
+    "id": "local:X_WiTraj_hal03548446",
+    "title": "HAL Id: hal-03548446",
+    "authors": [
+      "WiTraj"
+    ],
+    "year": 2024,
+    "venue": "General WiFi Sensing",
+    "bibtex_key": "x2024halb",
+    "abstract": "WiFi-based device-free motion tracking systems track persons without requiring them to carry any device. Existing work has explored signal parameters such as time- of-ﬂight (ToF), angle-of-arrival (AoA), and Doppler-frequency- shift (DFS) extracted from WiFi channel state information (CSI) to locate and track people in a room. However, they are not robust due to unreliable estimation of signal parameters. ToF and AoA estimations are not accurate for current standards- compliant WiFi devices that typically have only two antennas and limited channel bandwidth. On the other hand, DFS can be extracted relatively easily on current devices but is susceptible to the high noise level and random phase offset in CSI measurement, which results in a speed-sign-ambiguity problem and renders ambiguous walking speeds. This paper proposes WiTraj, a device-free indoor motion tracking system using commodity WiFi devices. WiTraj improves tracking robustness from three aspects: 1) It signiﬁcantly im- proves DFS estimation quality by using the ratio of the CSI from two antennas of each receiver, 2) To better track human walking, it leverages multiple receivers placed at different viewing angles to capt",
+    "pdf_path": "data/raw_papers/X_WiTraj_hal03548446.pdf",
+    "screening_status": "approved",
+    "category": "General WiFi Sensing",
+    "screening_reason": "Core corpus paper (General WiFi Sensing)"
+  },
+  "local:X_data_leakage_mdpi_24_24_8201": {
+    "id": "local:X_data_leakage_mdpi_24_24_8201",
+    "title": "Citation: Varga, D. Mitigating Data",
+    "authors": [
+      "data"
+    ],
+    "year": 2024,
+    "venue": "Edge Systems & Benchmark Rigor",
+    "bibtex_key": "x2024citation",
+    "abstract": "Human action recognition using WiFi channel state information (CSI) has gained attention due to its non-intrusive nature and potential applications in healthcare, smart environments, and security. However, the reliability of methods developed for CSI-based action recognition is often contingent on the quality of the datasets and evaluation protocols used. In this paper, we uncovered a critical data leakage issue, which arises from improper data partitioning, in a widely used WiFi CSI benchmark dataset. Specifically, the benchmark fails to separate individuals between the training and test sets, leading to inflated performance metrics as models inadvertently learn individual-specific features rather than generalizable action patterns. We analyzed this issue in depth, retrained several benchmarked models using corrected data partitioning methods, and demonstrated a significant drop in accuracy when individuals were properly separated across training and testing. Our findings highlight the importance of rigorous data partitioning in CSI-based action recognition and provide recommendations for mitigating data leakage in future research. This work contributes to the development of more ",
+    "pdf_path": "data/raw_papers/X_data_leakage_mdpi_24_24_8201.pdf",
+    "screening_status": "approved",
+    "category": "Edge Systems & Benchmark Rigor",
+    "screening_reason": "Core corpus paper (Edge Systems & Benchmark Rigor)"
+  },
+  "local:X_eHealthCSI_IEEEAccess2023": {
+    "id": "local:X_eHealthCSI_IEEEAccess2023",
+    "title": "Received 2 June 2023, accepted 3 July 2023, date of publication 11 July 2023, date of current version 18 July 2023.",
+    "authors": [
+      "eHealthCSI"
+    ],
+    "year": 2024,
+    "venue": "Vital Signs & Respiration",
+    "bibtex_key": "x2024received",
+    "abstract": "Recent studies corroborate Wi-Fi Channel State Information (CSI) usability to monitor patients remotely and obtain health information non-invasively and with low-cost. In addition to monitoring vital signs, this technology can also be applied to presence detection, subject recognition, position and movement identification, among other uses. Despite its wide range of potential applications, there is a lack of CSI datasets that cover multiple activities and include participants’ phenotype information to help develop, test, and compare new solutions. This study highlights the importance of building a robust public Wi-Fi CSI dataset. Therefore, we present eHealth CSI, a CSI dataset that includes a variety of Wi-Fi CSI data from more than 100 people in various activities in a controlled room. We also include CSI data collected in the same room without the presence of participants. This dataset was made publicly available online to other researchers under request. In this work, we introduce CSI technology and describe the data collection setup. In addition to CSI data, our dataset includes participants’ phenotype information and heartbeat rate monitoring data using a smartwatch.",
+    "pdf_path": "data/raw_papers/X_eHealthCSI_IEEEAccess2023.pdf",
+    "screening_status": "approved",
+    "category": "Vital Signs & Respiration",
+    "screening_reason": "Core corpus paper (Vital Signs & Respiration)"
+  },
+  "local:X_vital_signs_survey_PMC9375645": {
+    "id": "local:X_vital_signs_survey_PMC9375645",
+    "title": "Since January 2020 Elsevier has created a COVID-19 resource centre with",
+    "authors": [
+      "vital"
+    ],
+    "year": 2024,
+    "venue": "Survey & Foundations",
+    "bibtex_key": "x2024since",
+    "abstract": "",
+    "pdf_path": "data/raw_papers/X_vital_signs_survey_PMC9375645.pdf",
+    "screening_status": "approved",
+    "category": "Survey & Foundations",
+    "screening_reason": "Core corpus paper (Survey & Foundations)"
+  },
+  "local:Youssef_DeviceFreePassiveLocalization": {
+    "id": "local:Youssef_DeviceFreePassiveLocalization",
+    "title": "Challenges: Device-free Passive Localization for Wireless",
+    "authors": [
+      "DeviceFreePassiveLocalization.pdf"
+    ],
+    "year": 2024,
+    "venue": "Occupant Identity & Biometrics",
+    "bibtex_key": "youssef2024challenges",
+    "abstract": "Typical location determination systems require the presence of a physical device that is attached to the person that is being tracked. In addition, they usually require the tracked device to participate actively in the localization process. In this paper, we introduce the concept of Device-free Passive (DfP) localization. A DfP system is envisioned to be able to detect, track, and identify entities that do not carry any device, nor participate actively in the localization process. The system works by monitoring and processing changes in the received physical signals at one or more monitoring points to detect changes in the environment. Applications for DfP systems include intrusion detection and tracking, protecting outdoor assets, such as pipelines, railroad tracks, and perimeters. We describe the DfP system’s architecture and the chal- lenges that need to be addressed to materialize a DfP sys- tem. We show the feasibility of the system by describing algorithms for implementing diﬀerent functionalities of a DfP system that works with nominal WiFi equipment. We present two techniques for intrusion detection and a tech- nique for tracking a single intruder. Our results show that the",
+    "pdf_path": "data/raw_papers/Youssef_DeviceFreePassiveLocalization.pdf",
+    "screening_status": "approved",
+    "category": "Occupant Identity & Biometrics",
+    "screening_reason": "Core corpus paper (Occupant Identity & Biometrics)"
+  },
+  "local:sensors-16-01401": {
+    "id": "local:sensors-16-01401",
+    "title": "Through Wall Radar Classiﬁcation of Human",
+    "authors": [
+      "Anon"
+    ],
+    "year": 2024,
+    "venue": "Home Safety, Presence & Inactivity",
+    "bibtex_key": "sensors2024through",
+    "abstract": "The ability to detect the presence as well as classify the activities of individuals behind visually obscuring structures is of signiﬁcant beneﬁt to police, security and emergency services in many situations. This paper presents the analysis from a series of experimental results generated using a through-the-wall (TTW) Frequency Modulated Continuous Wave (FMCW) C-Band radar system named Soprano. The objective of this analysis was to classify whether an individual was carrying an item in both hands or not using micro-Doppler information from a FMCW sensor. The radar was deployed at a standoff distance, of approximately 0.5 m, outside a residential building and used to detect multiple people walking within a room. Through the application of digital ﬁltering, it was shown that signiﬁcant suppression of the primary wall reﬂection is possible, signiﬁcantly enhancing the target signal to clutter ratio. Singular Value Decomposition (SVD) signal processing techniques were then applied to the micro-Doppler signatures from different individuals. Features from the SVD information have been used to classify whether the person was carrying an item or walking free handed. Excellent performance o",
+    "pdf_path": "data/raw_papers/sensors-16-01401.pdf",
+    "screening_status": "approved",
+    "category": "Home Safety, Presence & Inactivity",
+    "screening_reason": "Core corpus paper (Home Safety, Presence & Inactivity)"
+  }
+}

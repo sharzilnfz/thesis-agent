@@ -1,0 +1,30 @@
+{
+  "dataset_summary": {
+    "total_samples": 2400,
+    "subjects": 16,
+    "environments": 3,
+    "classes": 6
+  },
+  "protocols": {
+    "random_split_biased": {
+      "accuracy": 0.9498,
+      "macro_f1": 0.9426,
+      "subject_leakage_count": 16,
+      "evaluation_verdict": "Biased by subject identity memorization and temporal overlap"
+    },
+    "loso_cross_subject": {
+      "accuracy": 0.8329,
+      "macro_f1": 0.8268,
+      "subject_leakage_count": 0,
+      "generalization_gap": 0.1168,
+      "evaluation_verdict": "Zero subject leakage verified"
+    },
+    "loeo_cross_environment": {
+      "accuracy": 0.764,
+      "macro_f1": 0.7615,
+      "environment_leakage_count": 0,
+      "generalization_gap": 0.1858,
+      "evaluation_verdict": "Zero environment multipath leakage verified"
+    }
+  }
+}

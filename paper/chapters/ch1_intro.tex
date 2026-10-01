@@ -1,0 +1,22 @@
+\chapter{Introduction}
+
+\section{Motivation and Background}
+Contactless ambient sensing using commodity radio frequency (RF) signals has emerged as a promising paradigm for pervasive computing, smart environments, and assisted living. Traditional ambient monitoring systems rely heavily on optical video cameras or wearable biomedical sensors. However, computer vision approaches face severe privacy objections in private domestic spaces such as bedrooms and bathrooms, alongside sensitivity to ambient lighting conditions and line-of-sight occlusions. Conversely, wearable monitors require continuous user adherence, frequent battery recharging, and can be easily displaced or rejected by elderly individuals suffering from cognitive decline.
+
+Channel State Information (CSI) extracted from standard orthogonal frequency-division multiplexing (OFDM) WiFi transceivers offers a non-invasive, privacy-preserving alternative. By capturing fine-grained physical-layer amplitude and phase perturbations across multiple subcarriers and spatial antenna paths, commodity WiFi infrastructure can simultaneously sense human presence, macroscopic locomotion, and subtle physiological chest displacements without requiring specialized hardware installations.
+
+\section{The Generalization Collapse and Data Leakage Crisis}
+Despite extensive laboratory demonstrations reporting classification accuracies exceeding 95\% for human activity recognition and gesture tracking, real-world deployment of WiFi CSI systems remains severely constrained. As surveyed comprehensively by Wang et al.~\cite{author2025a}, existing deep learning architectures suffer catastrophic performance collapse when transferred to unseen environments, uncalibrated device placements, or novel occupants. Conventional models trained via empirical risk minimization frequently latch onto spurious correlations, static multipath profiles, and subject-specific biometric signatures rather than learning invariant physical representations of human motion.
+
+Compounding this domain shift challenge is a widespread evaluation rigor problem within the wireless sensing literature. Recent benchmark audits by Varga~\cite{author2024mitigating} demonstrated that arbitrary random sample splitting across overlapping sliding windows and non-disjoint subject cohorts drastically inflates reported accuracy. When evaluated under strict subject-held-out protocols, real-world recognition performance often degrades by 20\% to 30\%, revealing that many published models primarily memorize static identities rather than generalizable dynamic kinematics.
+
+\section{Problem Statement and Core Objectives}
+This thesis addresses the fundamental gap between controlled laboratory benchmarks and real-world residential deployment. We investigate how physics-grounded signal representations and uncertainty-aware state-machine gating can enable robust, zero-leakage ambient sensing on resource-constrained edge hardware. Specifically, the framework targets three interconnected safety capabilities:
+\begin{enumerate}
+    \item \textbf{Robust Motion and Activity Detection:} Establishing environment-invariant motion detection and vacant-room baselines using statistical autocorrelation principles~\cite{author2019widetect}.
+    \item \textbf{Uncertainty-Gated Inactivity Monitoring:} Differentiating safe sedentary rest from emergency immobility using respiration liveness tracking, while guaranteeing that suspected fall impacts are never cleared prematurely.
+    \item \textbf{Open-Set Resident Verification:} Authenticating registered household members and rejecting unknown visitors strictly through walking kinematics, avoiding unsubstantiated claims of unconstrained cardiac biometric identification.
+\end{enumerate}
+
+\section{Thesis Organization}
+The remainder of this thesis is structured as follows. Chapter~2 conducts an exhaustive literature review of theoretical CSI foundations, multi-antenna phase sanitization, cross-domain transfer paradigms, and edge deployment constraints. Chapter~3 presents the proposed system architecture, detailing the dual-antenna ratio front-end and the 5-state uncertainty-aware finite-state machine. Chapter~4 provides extensive empirical evaluations across multiple open benchmarks under strict zero-leakage protocols. Finally, Chapter~5 discusses embedded edge profiling, failure case analyses, and future research directions.
